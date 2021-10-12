@@ -9,7 +9,32 @@ namespace Network_Learning.Scripts.Networking
     [RequireComponent(typeof(PlayerController))]
     public class NetworkPlayer : NetworkBehaviour
     {
-        private GameObject enemytoSpawn;
+        [SerializeField] private GameObject enemytoSpawn;
+        [SyncVar(hook = nameof(SetColor)), SerializeField] private Color cubeColor;
+
+        [SerializeField] private SyncList<float> syncedFloats = new SyncList<float>();
+
+        // SyncVarHooks get called in the order the VARIABLES are defined not the functions
+        // [SyncVar(hook = "SetX")] public float x;
+        // [SyncVar(hook = "SetX")] public float y;
+        // [SyncVar(hook = "SetX")] public float z;
+        //
+        // [Command]
+        // public void CmdSetPosition(float _x, float _y, float _z)
+        // {
+        //     z = _z;
+        //     x = _x;
+        //     y = _y;
+        // }
+        
+        private Material cachedMaterial;
+        private void SetColor(Color _old, Color _new)
+        {
+            if (cachedMaterial == null)
+                cachedMaterial = gameObject.GetComponent<MeshRenderer>().material;
+
+            cachedMaterial.color = _new;
+        }
         
         private void Awake()
         {
@@ -20,6 +45,8 @@ namespace Network_Learning.Scripts.Networking
 
         private void Update()
         {
+            MeshRenderer render = gameObject.GetComponent<MeshRenderer>();
+            render.material.color = cubeColor;
             // Determine if player is Local player.
             if (isLocalPlayer)
             {
@@ -27,6 +54,11 @@ namespace Network_Learning.Scripts.Networking
                 {
                     // Run function that tells every client to change the colour of this gameObject
                     CmdRandomColor();
+                }
+
+                if (Input.GetKeyDown(KeyCode.N))
+                {
+                    OnStartServer();
                 }
             }
         }
@@ -89,5 +121,14 @@ namespace Network_Learning.Scripts.Networking
             PlayerController controller = gameObject.GetComponent<PlayerController>();
             controller.enabled = isLocalPlayer;
         }
+
+        // This runs when the server starts... ON the server
+        // In the case of a Host-Client situation, this only runs when the HOST launches because the host is the server
+        public override void OnStartServer()
+        {
+            for (int i = 0; i < 10; i++) 
+                syncedFloats.Add(Random.Range(0, 11));
+        }
+        
     }
 }
