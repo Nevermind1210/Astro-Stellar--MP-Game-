@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  camOffset: {x: 0, y: 0, z: 0}
+  camOffset: {x: 0, y: 10, z: -5}
   trap: {fileID: 0}
   trapCount: 0
 --- !u!114 &1731764962
