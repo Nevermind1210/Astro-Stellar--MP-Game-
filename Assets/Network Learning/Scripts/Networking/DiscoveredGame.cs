@@ -4,6 +4,7 @@ using System.Text;
 using kcp2k;
 using UnityEngine;
 using UnityEngine.UI;
+using Ping = System.Net.NetworkInformation.Ping;
 
 namespace Network_Learning.Scripts.Networking
 {
@@ -39,23 +40,22 @@ namespace Network_Learning.Scripts.Networking
             response = _response;
             gameInformation.text = $"<b>{response.EndPoint.Address}<b>";
         }
-        
+
         private void Update()
         {
             Ping pingSender = new Ping();
-            PingOptions options = new PingOptions()
+            PingOptions options = new PingOptions
             {
-                DontFragment = true;
+                DontFragment = true
             };
 
-            const string DATA = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA fuck";
+            const string DATA = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa FUCK";
             byte[] buffer = Encoding.ASCII.GetBytes(DATA);
             const int TIMEOUT = 120;
             PingReply reply = pingSender.Send(response.EndPoint.Address, TIMEOUT, buffer, options);
-            if (reply?.Status == IPStatus.Success)
+            if(reply?.Status == IPStatus.Success)
             {
-                gameInformation.text =
-                    $"<b>{response.EndPoint.Address}</b>\n<size={gameInformation.fontSize / 2}>Ping : {reply.RoundtripTime}</size>";
+                gameInformation.text = $"<b>{response.EndPoint.Address}</b>\n<size={gameInformation.fontSize / 2}>Ping: {reply.RoundtripTime}</size>";
             }
         }
     }
