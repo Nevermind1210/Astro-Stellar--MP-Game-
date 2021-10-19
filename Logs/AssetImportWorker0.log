@@ -99,3 +99,101 @@ Received Import Request.
 Start importing Assets/Astro-Stellar/Physics using Guid(9e3c93f0d8ccda244baf6a6aa93bd939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f3d297874126a6c9aebed8cb50a192e') in 0.007428 seconds
   Import took 0.010250 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002137 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.718 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.4 MB.
+System memory in use after: 102.4 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2494.
+Total: 1.915900 ms (FindLiveObjects: 0.187600 ms CreateObjectMapping: 0.082100 ms MarkObjects: 1.586500 ms  DeleteObjects: 0.058800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 252.832879 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Player New.prefab
+  artifactKey: Guid(b2186c00dd372ec46b1950ee4051bab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Player New.prefab using Guid(b2186c00dd372ec46b1950ee4051bab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd43f862bb06a3b3b8055bb595462970a') in 0.045567 seconds
+  Import took 0.048353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001585 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Player New.prefab
+  artifactKey: Guid(b2186c00dd372ec46b1950ee4051bab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Player New.prefab using Guid(b2186c00dd372ec46b1950ee4051bab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd43f862bb06a3b3b8055bb595462970a') in 0.007507 seconds
+  Import took 0.010164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.622900 seconds.
+  path: Assets/Network Learning/Scenes/Online.unity
+  artifactKey: Guid(1022ee9308112004989eb1de40a429ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Network Learning/Scenes/Online.unity using Guid(1022ee9308112004989eb1de40a429ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c12740095e8534992b13f7369c34765') in 0.008278 seconds
+  Import took 0.010782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.541924 seconds.
+  path: Assets/Network Learning/Scenes/Offline.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Network Learning/Scenes/Offline.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2701a83162fa826bca7c4c32dc89264e') in 0.007653 seconds
+  Import took 0.010548 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001975 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.697 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.7 MB.
+System memory in use after: 102.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2497.
+Total: 1.667800 ms (FindLiveObjects: 0.156900 ms CreateObjectMapping: 0.062500 ms MarkObjects: 1.395600 ms  DeleteObjects: 0.052100 ms)
+
