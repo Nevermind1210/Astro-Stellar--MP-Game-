@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 using Mirror;
+using Mirror.Discovery;
 
 namespace Network_Learning.Scripts.Networking
 {
@@ -63,6 +64,8 @@ namespace Network_Learning.Scripts.Networking
       /// the dictionary of all connected players using their NetID as the key.
       /// </summary>
       private Dictionary<uint, NetworkPlayer> _players = new Dictionary<uint, NetworkPlayer>();
+
+      public CustomNetworkDiscovery discovery;
       
       /// <summary>
       /// This is invoked when a host is started.
@@ -71,6 +74,8 @@ namespace Network_Learning.Scripts.Networking
       public override void OnStartHost()
       {
          isHost = true;
+         // This makes it visible on the network
+         discovery.AdvertiseServer();
       }
 
       /// <summary> This is called when a host is stopped /// </summary>

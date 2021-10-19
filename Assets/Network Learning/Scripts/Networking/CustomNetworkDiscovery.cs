@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
+using kcp2k;
 using Mirror;
 using Mirror.Discovery;
 using UnityEngine;
@@ -22,6 +23,8 @@ namespace Network_Learning.Scripts.Networking
         public IPEndPoint EndPoint { get; set; }
 
         public Uri uri;
+
+        public ushort port;
 
         public long serverId;
     }
@@ -71,7 +74,8 @@ namespace Network_Learning.Scripts.Networking
                 return new DiscoveryResponse()
                 {
                     serverId = serverID,
-                    uri = transport.ServerUri()
+                    uri = transport.ServerUri(),
+                    port = ((KcpTransport)transport).Port
                 };
             }
             catch (NotImplementedException e)
