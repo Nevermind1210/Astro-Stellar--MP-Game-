@@ -8373,8 +8373,8 @@ MonoBehaviour:
   runInBackground: 1
   autoStartServerBuild: 1
   serverTickRate: 30
-  offlineScene: Assets/Network Learning/Scenes/Online.unity
-  onlineScene: Assets/Network Learning/Scenes/Offline.unity
+  offlineScene: Assets/Network Learning/Scenes/Offline.unity
+  onlineScene: Assets/Network Learning/Scenes/Online.unity
   transport: {fileID: 1507900785}
   networkAddress: localhost
   maxConnections: 4
