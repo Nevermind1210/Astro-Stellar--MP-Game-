@@ -30,9 +30,16 @@ namespace A1
             if(_collision.gameObject.CompareTag("Player"))
             {
                 PlayerInteract player = _collision.gameObject.GetComponent<PlayerInteract>();
-                transform.parent = player.transform;
-                transform.position = player.itemLocation.position;
-                player.itemHolding = this;
+                if(player.itemHolding == null)
+                {
+                    transform.parent = player.itemLocation.transform;
+                    transform.position = player.itemLocation.position;
+                    player.itemHolding = this;
+                }
+                else
+                {
+                    Debug.Log("Already holding an item.");
+                }
             }
         }
 
