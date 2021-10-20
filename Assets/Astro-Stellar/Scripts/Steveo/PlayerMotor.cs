@@ -55,7 +55,7 @@ namespace AltarChase.Player
         private void Move()
         {
             Vector3 travelDirection = rb.velocity;
-            float friction = travelDirection.magnitude;
+            float friction = travelDirection.magnitude *0.5f;
             Vector3 frictionDirection = new Vector3(-travelDirection.x, 0, -travelDirection.z).normalized;
             Vector3 frictionForce = friction * frictionDirection;
             
