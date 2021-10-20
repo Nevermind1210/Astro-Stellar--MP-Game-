@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace AltarChase.Player
+namespace A1.Player
 {
     /// <summary>
     /// Handles the movement of the player objects.
