@@ -785,7 +785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &240862008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7689,6 +7689,7 @@ GameObject:
   - component: {fileID: 1507900788}
   - component: {fileID: 1507900785}
   - component: {fileID: 1507900786}
+  - component: {fileID: 1507900789}
   m_Layer: 0
   m_Name: Network Manager
   m_TagString: Untagged
@@ -7772,20 +7773,35 @@ MonoBehaviour:
   runInBackground: 1
   autoStartServerBuild: 1
   serverTickRate: 30
-  offlineScene: Assets/Network Learning/Scenes/Offline.unity
-  onlineScene: Assets/Network Learning/Scenes/Online.unity
+  offlineScene: Assets/Astro-Stellar/Scenes/Offline A1S.unity
+  onlineScene: Assets/Astro-Stellar/Scenes/Online A1S.unity
   transport: {fileID: 1507900785}
   networkAddress: localhost
   maxConnections: 100
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 4581775278972753603, guid: 3b39526cbb3226c4eb279dc35c8c391f, type: 3}
+  playerPrefab: {fileID: 9022453017182460188, guid: b2186c00dd372ec46b1950ee4051bab7, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs:
   - {fileID: 6686143960110902902, guid: b4e80afb7c47ded488d5c949221e8dc6, type: 3}
-  discovery: {fileID: 0}
+  discovery: {fileID: 1507900786}
+--- !u!114 &1507900789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507900784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showGUI: 1
+  offsetX: 0
+  offsetY: 0
 --- !u!1001 &1546068280
 PrefabInstance:
   m_ObjectHideFlags: 0
