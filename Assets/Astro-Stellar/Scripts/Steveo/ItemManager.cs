@@ -9,6 +9,9 @@ using UnityEngine;
 
 namespace A1
 {
+    /// <summary>
+    /// This class will handle all the items that are brought back to the spaceship object.
+    /// </summary>
     public class ItemManager : NetworkBehaviour
     {
         [SerializeField] private List<Item> organicItems = new List<Item>();
@@ -37,9 +40,12 @@ namespace A1
 
                     }
 
+                    // Set the tranforms of the item and deactivate
                     item.gameObject.transform.parent = this.transform;
                     item.gameObject.transform.position = this.transform.position;
                     item.gameObject.SetActive(false);
+                    // Set the player item slot to null so they can pick up another item.
+                    player.itemHolding = null;
                 }
                 else
                 {
