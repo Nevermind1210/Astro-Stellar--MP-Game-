@@ -19,11 +19,7 @@ namespace A1.Player
         private float movementVelocity;
         private Vector3 movementDirection;
 
-        public float horizontalMove;
-        public float verticalMove;
         public Vector3 lastLookDirection;
-
-        [SerializeField] private Transform right;
 
         //todo Add Animator for movement animations.
         // todo MOBILE INPUT
@@ -54,78 +50,7 @@ namespace A1.Player
             //todo Add animation checks into here
         }
 
-        /// <summary>
-        /// Gets the input for rotating the character.
-        /// </summary>
-        private void GetRotationInput()
-        {
-            if(Input.GetAxisRaw("Horizontal")>0)
-            {
-                horizontalMove = 1;
-            }
-            else if(Input.GetAxisRaw("Horizontal") < 0)
-            {
-                horizontalMove = -1;
-            }
-            else
-            {
-                horizontalMove = 0;
-            }
-            
-            if(Input.GetAxisRaw("Vertical")>0)
-            {
-                verticalMove = 1;
-            }
-            else if(Input.GetAxisRaw("Vertical") < 0)
-            {
-                verticalMove = -1;
-            }
-            else
-            {
-                verticalMove = 0;
-            }
-        }
         
-        /// <summary>
-        /// Rotates the character based on the input and saves the last look direction.
-        /// </summary>
-        private void RotateCharacter()
-        {
-            switch(horizontalMove)
-            {
-                case 1:
-                    transform.rotation = Quaternion.LookRotation(Vector3.right);
-                    lastLookDirection = Vector3.right;
-                    break;
-                case -1:
-                    transform.rotation = Quaternion.LookRotation(Vector3.left);
-                    lastLookDirection = Vector3.left;
-
-                    break;
-                case 0:
-                    transform.rotation = Quaternion.LookRotation(lastLookDirection);
-                    break;
-            }
-            
-            switch(verticalMove)
-            {
-                case 1:
-                    transform.rotation = Quaternion.LookRotation(Vector3.forward);
-                    lastLookDirection = Vector3.forward;
-                    break;
-                case -1:
-                    transform.rotation = Quaternion.LookRotation(Vector3.back);
-                    lastLookDirection = Vector3.back;
-
-                    break;
-                case 0:
-                    transform.rotation = Quaternion.LookRotation(lastLookDirection);
-                    break;
-            }
-
-        }
-        
-
         /// <summary>
         /// Moves the character by applying force to the rigidbody. Called in Fixed Update.
         /// </summary>
@@ -148,13 +73,26 @@ namespace A1.Player
         void Update()
         {   
             GetMovementInput();
-            GetRotationInput();
         }
         
         private void FixedUpdate()
         {
             Move();
-            RotateCharacter();
+            // Sets the character facing direction when moving
+            if(movementVelocity != 0)
+            {
+                transform.rotation = Quaternion.LookRotation(movementDirection);
+                // Saves the direction to use when stopped.
+                lastLookDirection = movementDirection;
+            }
+            // Sets the character facing direction to the last direction it was moving in.
+            if(movementVelocity == 0)
+            {
+                transform.rotation = Quaternion.LookRotation(lastLookDirection);
+            }
+            
+
+            
         }
     }
 }
