@@ -16,6 +16,7 @@ namespace A1.Player
 
 	    [SerializeField] public Item itemHolding = null;
 	    [SerializeField] public Transform itemLocation;
+	    public int personalScore;
 	    
         /* pick up items
          *  update HUD
