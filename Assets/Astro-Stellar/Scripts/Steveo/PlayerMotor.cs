@@ -19,6 +19,8 @@ namespace A1.Player
         private float movementVelocity;
         private Vector3 movementDirection;
 
+        public Vector3 lastLookDirection;
+
         //todo Add Animator for movement animations.
         // todo MOBILE INPUT
 
@@ -45,10 +47,10 @@ namespace A1.Player
             {
                 movementVelocity = 0;
             }
-            
             //todo Add animation checks into here
         }
 
+        
         /// <summary>
         /// Moves the character by applying force to the rigidbody. Called in Fixed Update.
         /// </summary>
@@ -76,6 +78,21 @@ namespace A1.Player
         private void FixedUpdate()
         {
             Move();
+            // Sets the character facing direction when moving
+            if(movementVelocity != 0)
+            {
+                transform.rotation = Quaternion.LookRotation(movementDirection);
+                // Saves the direction to use when stopped.
+                lastLookDirection = movementDirection;
+            }
+            // Sets the character facing direction to the last direction it was moving in.
+            if(movementVelocity == 0)
+            {
+                transform.rotation = Quaternion.LookRotation(lastLookDirection);
+            }
+            
+
+            
         }
     }
 }
