@@ -440,3 +440,4 @@ Received Import Request.
 Start importing Assets/Models/Danielle's/Prefabs using Guid(898bd7ca0376e1b4da18f1f81015b04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24894337b8cc0110cfd9eb19317df426') in 0.008948 seconds
   Import took 0.013714 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
