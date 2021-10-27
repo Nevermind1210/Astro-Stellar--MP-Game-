@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Astro-Stellar/Scenes/Offline A1S.unity
+    path: Assets/Astro-Stellar/Scenes/Old Scenes/Offline A1S.unity
     guid: 682862e42966d524086d77d3d8cabcac
   - enabled: 1
-    path: Assets/Astro-Stellar/Scenes/Online A1S.unity
+    path: Assets/Astro-Stellar/Scenes/Old Scenes/Online A1S.unity
     guid: 172b00f07aec407498da780c5026d5a8
   m_configObjects: {}

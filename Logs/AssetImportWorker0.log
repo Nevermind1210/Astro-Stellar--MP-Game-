@@ -15,11 +15,19 @@ C:/Users/steve/Documents/GitHub/Astro-Stellar--MP-Game-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 62437
 Successfully changed project path to: C:/Users/steve/Documents/GitHub/Astro-Stellar--MP-Game-
 C:/Users/steve/Documents/GitHub/Astro-Stellar--MP-Game-
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 39.00 ms, found 1 plugins.
+=======
+50095
+Successfully changed project path to: F:/Unity Projects/Astro-Stellar -MP Game-/Astro-Stellar--MP-Game-
+F:/Unity Projects/Astro-Stellar -MP Game-/Astro-Stellar--MP-Game-
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 35.63 ms, found 1 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,20 +43,32 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< Updated upstream
 Registered in 0.001651 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 30.81 ms, found 1 plugins.
+=======
+Registered in 0.002788 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 36.94 ms, found 1 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.546 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
@@ -57,11 +77,22 @@ Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+=======
+- Completed reload, in  2.738 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004584 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  0.838 seconds
 Platform modules already initialized, skipping
 ========================================================================
@@ -115,12 +146,196 @@ UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.
 System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
+=======
+- Completed reload, in  1.124 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2051 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.4 MB.
+System memory in use after: 103.4 MB.
+
+Unloading 79 unused Assets to reduce memory usage. Loaded Objects now: 2495.
+Total: 3.036400 ms (FindLiveObjects: 0.385200 ms CreateObjectMapping: 0.178300 ms MarkObjects: 2.256100 ms  DeleteObjects: 0.215700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(cef81b12cde7d1e4f84d6619406f0f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(cef81b12cde7d1e4f84d6619406f0f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033b71cfdf61f824f6c7f29aeef3189f') in 0.069495 seconds
+  Import took 0.125488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.749335 seconds.
+  path: Assets/Astro-Stellar/Scenes
+  artifactKey: Guid(bb6ea189db2552447b72aebbf1a8831b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scenes using Guid(bb6ea189db2552447b72aebbf1a8831b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a8bcf70b90757cebc68895d07e42fb') in 0.036608 seconds
+  Import took 0.056677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.189688 seconds.
+  path: Assets/Astro-Stellar/Scenes
+  artifactKey: Guid(bb6ea189db2552447b72aebbf1a8831b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scenes using Guid(bb6ea189db2552447b72aebbf1a8831b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a8bcf70b90757cebc68895d07e42fb') in 0.061230 seconds
+  Import took 0.110384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.771715 seconds.
+  path: Assets/Astro-Stellar/Scenes/MainMenu.unity
+  artifactKey: Guid(eaf2fe70f2e2a1a4badc397612716621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scenes/MainMenu.unity using Guid(eaf2fe70f2e2a1a4badc397612716621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce44d07acbd95f71e9e8913ac45664af') in 0.030515 seconds
+  Import took 0.050735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 303.271381 seconds.
+  path: Assets/AltarChase/Prefabs
+  artifactKey: Guid(00624ca374f76b24a9f7da5f1f278fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AltarChase/Prefabs using Guid(00624ca374f76b24a9f7da5f1f278fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e0dc6cb0ffd7fbc6c287c2fa8c5002') in 0.052728 seconds
+  Import took 0.057129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018883 seconds.
+  path: Assets/AltarChase/Prefabs/Main Menu.prefab
+  artifactKey: Guid(49cbe28c99db18c4f832e6a60ab1d51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AltarChase/Prefabs/Main Menu.prefab using Guid(49cbe28c99db18c4f832e6a60ab1d51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0a425d39d486f0ddcad45b4161f9f1') in 0.083396 seconds
+  Import took 0.124084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 388.299481 seconds.
+  path: Assets/Astro-Stellar
+  artifactKey: Guid(44d96d72a4d67ab4090d0669ad81b3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar using Guid(44d96d72a4d67ab4090d0669ad81b3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26fc015c6cfbc9f729a8ebeb81df990') in 0.066916 seconds
+  Import took 0.072461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.832570 seconds.
+  path: Assets/Astro-Stellar/Font
+  artifactKey: Guid(1c3de8f440fc017479e6a4d38ffed646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Font using Guid(1c3de8f440fc017479e6a4d38ffed646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1853af375ef45a8a66f8da562af619aa') in 0.058422 seconds
+  Import took 0.105338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.771211 seconds.
+  path: Assets/Astro-Stellar/Font/Oxanium-VariableFont_wght.ttf
+  artifactKey: Guid(f0e3c02f7635c0e439e115dc6b847d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Font/Oxanium-VariableFont_wght.ttf using Guid(f0e3c02f7635c0e439e115dc6b847d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6437ffec3ab7ad404db6ed9dae5e07f') in 0.184283 seconds
+  Import took 0.205883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 764.838233 seconds.
+  path: Assets/Astro-Stellar/Font/Oxanium-VariableFont_wght SDF.asset
+  artifactKey: Guid(106a73f14056925479f20b47e877cb6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Font/Oxanium-VariableFont_wght SDF.asset using Guid(106a73f14056925479f20b47e877cb6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639321df7d3857e3e5cbc2b70409cf6a') in 0.106563 seconds
+  Import took 0.126661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.510009 seconds.
+  path: Assets/Astro-Stellar/Font/Oxanium-VariableFont_wght SDF.asset
+  artifactKey: Guid(106a73f14056925479f20b47e877cb6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Font/Oxanium-VariableFont_wght SDF.asset using Guid(106a73f14056925479f20b47e877cb6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd9841f7aed47bffc36b8edb180c010') in 0.077548 seconds
+  Import took 0.109451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1934.209544 seconds.
+  path: Assets/Astro-Stellar/Scenes/Offline A1S.unity
+  artifactKey: Guid(682862e42966d524086d77d3d8cabcac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scenes/Offline A1S.unity using Guid(682862e42966d524086d77d3d8cabcac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ab596ddfdfb0b07952bf724b3f76a9') in 0.125643 seconds
+  Import took 0.164280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.581451 seconds.
+  path: Assets/Network Learning/Scenes/Offline.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Network Learning/Scenes/Offline.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d06436d191c27f6a29758abd488e37f') in 0.079459 seconds
+  Import took 0.149814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 155.806141 seconds.
+  path: Assets/Network Learning/Scenes/Offline 1.unity
+  artifactKey: Guid(5e5ff5ca1a471b543ba573d93bc610c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Network Learning/Scenes/Offline 1.unity using Guid(5e5ff5ca1a471b543ba573d93bc610c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e31e8c93b75ff0058105245bcc1a326') in 0.050598 seconds
+  Import took 0.130363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.876381 seconds.
+  path: Assets/Network Learning/Scenes/Offline A1S.unity
+  artifactKey: Guid(5e5ff5ca1a471b543ba573d93bc610c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Network Learning/Scenes/Offline A1S.unity using Guid(5e5ff5ca1a471b543ba573d93bc610c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e4c27a84ebd6f3fd18966de354a818e') in 0.047377 seconds
+  Import took 0.111668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.562476 seconds.
+  path: Assets/Network Learning/Scenes/Offline A1S 1.unity
+  artifactKey: Guid(d14a72bd6f2d2834da00822726d9cf90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Network Learning/Scenes/Offline A1S 1.unity using Guid(d14a72bd6f2d2834da00822726d9cf90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde22b09841b1a755a8a0a23157370ee') in 0.042584 seconds
+  Import took 0.046874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.682935 seconds.
+  path: Assets/Network Learning/Scenes/Online A1S.unity
+  artifactKey: Guid(d14a72bd6f2d2834da00822726d9cf90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Network Learning/Scenes/Online A1S.unity using Guid(d14a72bd6f2d2834da00822726d9cf90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579a95ab6c171bf5df918315dcbcdf31') in 0.051825 seconds
+  Import took 0.064273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.639970 seconds.
+  path: Assets/Astro-Stellar/Scenes/New Folder
+  artifactKey: Guid(0e27a3706f4de314489ed8cafb3ec959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scenes/New Folder using Guid(0e27a3706f4de314489ed8cafb3ec959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b4e742d1252f4478ed0faf5d038599') in 0.029257 seconds
+  Import took 0.080053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.685327 seconds.
+  path: Assets/Astro-Stellar/Scenes/Old Scenes
+  artifactKey: Guid(0e27a3706f4de314489ed8cafb3ec959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scenes/Old Scenes using Guid(0e27a3706f4de314489ed8cafb3ec959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7197c4e9c900b31675c0c25f1cf26ba4') in 0.062641 seconds
+  Import took 0.077222 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003674 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+>>>>>>> Stashed changes
 [Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
 
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  0.726 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
@@ -131,4 +346,16 @@ System memory in use after: 100.9 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2495.
 Total: 1.780500 ms (FindLiveObjects: 0.175500 ms CreateObjectMapping: 0.065900 ms MarkObjects: 1.474800 ms  DeleteObjects: 0.063600 ms)
+=======
+- Completed reload, in  1.120 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2004 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.8 MB.
+System memory in use after: 103.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2541.
+Total: 5.193200 ms (FindLiveObjects: 0.715300 ms CreateObjectMapping: 0.271200 ms MarkObjects: 3.904100 ms  DeleteObjects: 0.294300 ms)
+>>>>>>> Stashed changes
 

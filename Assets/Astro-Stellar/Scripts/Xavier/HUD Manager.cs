@@ -7,6 +7,10 @@ namespace Astro_Stellar.Scripts.Xavier
     {
 
 
+<<<<<<< Updated upstream
         
+=======
+       
+>>>>>>> Stashed changes
     }
 }
