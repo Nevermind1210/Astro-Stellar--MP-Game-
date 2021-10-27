@@ -7,10 +7,6 @@ namespace Astro_Stellar.Scripts.Xavier
     {
 
 
-        IEnumerator TextPopUp
-        {
-            
-            yield return null;
-        }
+        
     }
 }
