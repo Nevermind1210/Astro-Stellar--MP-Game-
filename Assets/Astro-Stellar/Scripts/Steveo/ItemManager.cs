@@ -32,7 +32,7 @@ namespace A1
         [Header("UI Elements")]
         public List<GameObject> partsUI = new List<GameObject>();
         private int index;
-        // [SerializeField] private TMP_Text organicsText;
+        [SerializeField] private TMP_Text organicsText;
 
 
         private void OnCollisionEnter(Collision _collision)
@@ -51,13 +51,13 @@ namespace A1
                                 organicItems.Add(item);
                                 totalScore += organicsValue;
                                 player.personalScore += organicsValue;
-                                // RpcDisplayOrganicsCount();
+                                RpcDisplayOrganicsCount();
                                 break;
                             case ItemType.ShipPart:
                                 partItems.Add(item);
                                 totalScore += partsValue;
                                 player.personalScore += partsValue;
-                                // RpcDisplayPartsUI();
+                                RpcDisplayPartsUI();
                                 break;
                             default:
                                 Debug.Log("Item has no type assigned");
@@ -65,10 +65,11 @@ namespace A1
 
                     }
 
+                    RpcPassItemToManager(item);
                     // Set the tranforms of the item and deactivate
-                    item.gameObject.transform.parent = this.transform;
-                    item.gameObject.transform.position = this.transform.position;
-                    item.gameObject.SetActive(false);
+                    // item.gameObject.transform.parent = this.transform;
+                    // item.gameObject.transform.position = this.transform.position;
+                    // item.gameObject.SetActive(false);
                     // Set the player item slot to null so they can pick up another item.
                     player.itemHolding = null;
                     
@@ -81,13 +82,21 @@ namespace A1
             }
         }
 
+        [ClientRpc]
+        public void RpcPassItemToManager(Item _item)
+        {
+            _item.gameObject.transform.parent = this.transform;
+            _item.gameObject.transform.position = this.transform.position;
+            _item.gameObject.SetActive(false);
+        }
+
         /// <summary>
         /// Displays the oganics count collected to all clients.
         /// </summary>
         [ClientRpc]
         public void RpcDisplayOrganicsCount()
         {
-            // organicsText.text = organicItems.Count.ToString();
+            organicsText.text = organicItems.Count.ToString();
         }
         
         /// <summary>

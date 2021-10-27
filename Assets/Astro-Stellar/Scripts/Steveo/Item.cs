@@ -1,5 +1,7 @@
 using A1.Player;
 
+using Mirror;
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,7 +22,7 @@ namespace A1
     /// <summary>
     /// This class handles all the Item functionality
     /// </summary>
-    public class Item : MonoBehaviour
+    public class Item : NetworkBehaviour
     {
         [SerializeField] public ItemType itemType;
 
@@ -36,8 +38,9 @@ namespace A1
                 PlayerInteract player = _collision.gameObject.GetComponent<PlayerInteract>();
                 if(player.itemHolding == null)
                 {
-                    transform.parent = player.itemLocation.transform;
-                    transform.position = player.itemLocation.position;
+                    RpcPickupItem(player);
+                    // transform.parent = player.itemLocation.transform;
+                    // transform.position = player.itemLocation.position;
                     player.itemHolding = this;
                 }
                 else
@@ -45,6 +48,13 @@ namespace A1
                     Debug.Log("Already holding an item.");
                 }
             }
+        }
+
+        [ClientRpc]
+        public void RpcPickupItem(PlayerInteract _player)
+        {
+            transform.parent = _player.itemLocation.transform;
+            transform.position = _player.itemLocation.position;
         }
 
         // Start is called before the first frame update
