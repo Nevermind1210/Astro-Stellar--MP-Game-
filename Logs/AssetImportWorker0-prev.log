@@ -15,11 +15,11 @@ F:/Unity Projects/Astro-Stellar -MP Game-/Astro-Stellar--MP-Game-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60766
+49219
 Successfully changed project path to: F:/Unity Projects/Astro-Stellar -MP Game-/Astro-Stellar--MP-Game-
 F:/Unity Projects/Astro-Stellar -MP Game-/Astro-Stellar--MP-Game-
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 47.15 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 40.94 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,189 +35,155 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002639 seconds.
+Registered in 0.002308 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 41.79 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 39.19 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.138 seconds
+- Completed reload, in  2.824 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004163 seconds.
+Registered in 0.003767 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.220 seconds
+- Completed reload, in  1.228 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2041 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.9 MB.
-System memory in use after: 103.0 MB.
+System memory in use before: 103.0 MB.
+System memory in use after: 103.1 MB.
 
-Unloading 79 unused Assets to reduce memory usage. Loaded Objects now: 2482.
-Total: 2.518400 ms (FindLiveObjects: 0.295700 ms CreateObjectMapping: 0.115100 ms MarkObjects: 1.937900 ms  DeleteObjects: 0.168300 ms)
+Unloading 79 unused Assets to reduce memory usage. Loaded Objects now: 2485.
+Total: 4.130100 ms (FindLiveObjects: 0.404800 ms CreateObjectMapping: 0.129100 ms MarkObjects: 3.293200 ms  DeleteObjects: 0.300900 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/New Terrain.asset
-  artifactKey: Guid(8cb8753cee433bb4cbd8be0e5011e648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(8cb8753cee433bb4cbd8be0e5011e648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '478cfbc7bec011052ffabbbd2f031bf5') in 0.081468 seconds
-  Import took 0.086026 seconds .
+  artifactKey: Guid(cef81b12cde7d1e4f84d6619406f0f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(cef81b12cde7d1e4f84d6619406f0f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f935ace5d535dfacc7ef1ab5f51620b8') in 0.091833 seconds
+  Import took 0.118668 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2046.374082 seconds.
-  path: Assets/Astro-Stellar GAME
-  artifactKey: Guid(9ecc1b7aabd781d4b9bf7269bac50b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME using Guid(9ecc1b7aabd781d4b9bf7269bac50b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea668aa8a7dd10fe4883a5383d5024ff') in 0.058806 seconds
-  Import took 0.063367 seconds .
+  Time since last request: 77.991044 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(cef81b12cde7d1e4f84d6619406f0f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(cef81b12cde7d1e4f84d6619406f0f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e8c42ab248e5cd7000f6ff8a9a38ad') in 0.020467 seconds
+  Import took 0.044229 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.605946 seconds.
-  path: Assets/Astro-Stellar GAME/Scripts
-  artifactKey: Guid(ad894b7bbc9c6c04caf9db6b78aeb5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Scripts using Guid(ad894b7bbc9c6c04caf9db6b78aeb5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea3280d05b8989ddbe646ea4b82fe69') in 0.029324 seconds
-  Import took 0.091287 seconds .
+  Time since last request: 53.963098 seconds.
+  path: Assets/Astro-Stellar
+  artifactKey: Guid(44d96d72a4d67ab4090d0669ad81b3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar using Guid(44d96d72a4d67ab4090d0669ad81b3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b9a85032add59a87df067e67b09169') in 0.038663 seconds
+  Import took 0.051813 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.203266 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs
-  artifactKey: Guid(42842a9081a37ee40a9c2f0b643d0566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs using Guid(42842a9081a37ee40a9c2f0b643d0566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bcd9a52a87efe85887766c9f96ac120') in 0.043357 seconds
-  Import took 0.075254 seconds .
+  Time since last request: 215.856046 seconds.
+  path: Assets/Astro-Stellar/Scripts
+  artifactKey: Guid(92ddd2447cb6fb94797e4200456e24f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts using Guid(92ddd2447cb6fb94797e4200456e24f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf0f37ba57dbe7deabcbe2f8e1b6d42b') in 0.035676 seconds
+  Import took 0.053164 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.040964 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Rock (3).prefab
-  artifactKey: Guid(ecd259695ed534149a6fba8cf3dc0614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Rock (3).prefab using Guid(ecd259695ed534149a6fba8cf3dc0614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2bd66b094d7676dae8ca2cd749fe5a8') in 0.076233 seconds
-  Import took 0.097194 seconds .
+  Time since last request: 5.876978 seconds.
+  path: Assets/Astro-Stellar/Prefabs
+  artifactKey: Guid(73827b5c5bb0c0e4bb6efbc435f4c1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs using Guid(73827b5c5bb0c0e4bb6efbc435f4c1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a26d8503c87d7146fd3275bd18a27c6') in 0.052920 seconds
+  Import took 0.056244 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.016547 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Rock (3).prefab
-  artifactKey: Guid(ecd259695ed534149a6fba8cf3dc0614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Rock (3).prefab using Guid(ecd259695ed534149a6fba8cf3dc0614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2bd66b094d7676dae8ca2cd749fe5a8') in 0.062017 seconds
-  Import took 0.067730 seconds .
+  Time since last request: 74.248064 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Rock (1).prefab
+  artifactKey: Guid(a3ba846c4e87bf94dbd60f3c0e4fde28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Rock (1).prefab using Guid(a3ba846c4e87bf94dbd60f3c0e4fde28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b24d62f6d36405a01f1874cf73f14ae') in 0.066662 seconds
+  Import took 0.077479 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.735024 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Big Rock.prefab
-  artifactKey: Guid(ecd259695ed534149a6fba8cf3dc0614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Big Rock.prefab using Guid(ecd259695ed534149a6fba8cf3dc0614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb8f2eeb89dce62395f1d62f1aa2865') in 0.043615 seconds
-  Import took 0.047777 seconds .
+  Time since last request: 0.002176 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Rock (1).prefab
+  artifactKey: Guid(a3ba846c4e87bf94dbd60f3c0e4fde28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Rock (1).prefab using Guid(a3ba846c4e87bf94dbd60f3c0e4fde28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b24d62f6d36405a01f1874cf73f14ae') in 0.043986 seconds
+  Import took 0.047249 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.572321 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Rock (5).prefab
-  artifactKey: Guid(62e24ef1f6883dc4b8bffd3de93a9ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Rock (5).prefab using Guid(62e24ef1f6883dc4b8bffd3de93a9ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b635969b39d558bf23cb8b2f0a354541') in 0.042262 seconds
-  Import took 0.063818 seconds .
+  Time since last request: 4.095220 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Small Rock.prefab
+  artifactKey: Guid(a3ba846c4e87bf94dbd60f3c0e4fde28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Small Rock.prefab using Guid(a3ba846c4e87bf94dbd60f3c0e4fde28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c7fc2b69c34bb90022847d6d434ff48') in 0.045025 seconds
+  Import took 0.066450 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.496611 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Tiny Rock.prefab
-  artifactKey: Guid(62e24ef1f6883dc4b8bffd3de93a9ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Tiny Rock.prefab using Guid(62e24ef1f6883dc4b8bffd3de93a9ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67a31d773c295ed8fe3f19b55189207') in 0.048522 seconds
-  Import took 0.079481 seconds .
+  Time since last request: 0.002818 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Small Rock.prefab
+  artifactKey: Guid(a3ba846c4e87bf94dbd60f3c0e4fde28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Small Rock.prefab using Guid(a3ba846c4e87bf94dbd60f3c0e4fde28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c7fc2b69c34bb90022847d6d434ff48') in 0.033542 seconds
+  Import took 0.036511 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.821814 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Rock (4).prefab
-  artifactKey: Guid(a7fab8ff01a20354187b3a140c2cce20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Rock (4).prefab using Guid(a7fab8ff01a20354187b3a140c2cce20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca77300c3d2150d5fa97ec6d8db2487c') in 0.047839 seconds
-  Import took 0.052337 seconds .
+  Time since last request: 22.459577 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Rock (2).prefab
+  artifactKey: Guid(8f73b4bc308833e4fa5e6800b7e54377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Rock (2).prefab using Guid(8f73b4bc308833e4fa5e6800b7e54377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f648408c11f56e4ccfa4921672bf373') in 0.049349 seconds
+  Import took 0.053018 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.190034 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Regular Rock.prefab
-  artifactKey: Guid(a7fab8ff01a20354187b3a140c2cce20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Regular Rock.prefab using Guid(a7fab8ff01a20354187b3a140c2cce20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e53132d2130e222ed8166626ee65070') in 0.059137 seconds
-  Import took 0.063098 seconds .
+  Time since last request: 0.004726 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Rock (2).prefab
+  artifactKey: Guid(8f73b4bc308833e4fa5e6800b7e54377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Rock (2).prefab using Guid(8f73b4bc308833e4fa5e6800b7e54377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f648408c11f56e4ccfa4921672bf373') in 0.030096 seconds
+  Import took 0.033177 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1304.997332 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Rock (11).prefab
-  artifactKey: Guid(2cd9c71780b65364692eb18df4caa0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Rock (11).prefab using Guid(2cd9c71780b65364692eb18df4caa0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a52c995019afe939aed9ddfc216b66') in 0.047023 seconds
-  Import took 0.069428 seconds .
+  Time since last request: 2.749454 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Big Rock.prefab
+  artifactKey: Guid(8f73b4bc308833e4fa5e6800b7e54377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Big Rock.prefab using Guid(8f73b4bc308833e4fa5e6800b7e54377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e126326c0e21ee15d474882f0946b2d1') in 0.041518 seconds
+  Import took 0.067428 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000601 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Rock (11).prefab
-  artifactKey: Guid(2cd9c71780b65364692eb18df4caa0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Rock (11).prefab using Guid(2cd9c71780b65364692eb18df4caa0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a52c995019afe939aed9ddfc216b66') in 0.046163 seconds
-  Import took 0.049145 seconds .
+  Time since last request: 171.869149 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Rock.prefab
+  artifactKey: Guid(50a3508a801134b48acf3148fff4eb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Rock.prefab using Guid(50a3508a801134b48acf3148fff4eb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8c21a7658fef9fc811cc0ec8bf1f33') in 0.043221 seconds
+  Import took 0.066681 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.308783 seconds.
-  path: Assets/Astro-Stellar GAME/Prefabs/Odd Rock.prefab
-  artifactKey: Guid(2cd9c71780b65364692eb18df4caa0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar GAME/Prefabs/Odd Rock.prefab using Guid(2cd9c71780b65364692eb18df4caa0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379072a0d243abff35c067200e475cf3') in 0.066253 seconds
-  Import took 0.082094 seconds .
+  Time since last request: 4.028341 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Regular Rock.prefab
+  artifactKey: Guid(50a3508a801134b48acf3148fff4eb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Regular Rock.prefab using Guid(50a3508a801134b48acf3148fff4eb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be3b6e4d584371606fdc2375ed9273b') in 0.026534 seconds
+  Import took 0.030017 seconds .
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006159 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  5.009 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1994 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.9 MB.
-System memory in use after: 100.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2484.
-Total: 4.489100 ms (FindLiveObjects: 0.485500 ms CreateObjectMapping: 0.190400 ms MarkObjects: 3.615500 ms  DeleteObjects: 0.195400 ms)
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
