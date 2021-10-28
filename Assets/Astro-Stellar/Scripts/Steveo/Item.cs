@@ -31,6 +31,7 @@ namespace A1
         /// This detects collision by a player and adds that item to the PlayerIteract.
         /// </summary>
         /// <param name="_collision"> The collider colliding with this object</param>
+        [Server]
         private void OnCollisionEnter(Collision _collision)
         {
             if(_collision.gameObject.CompareTag("Player"))
