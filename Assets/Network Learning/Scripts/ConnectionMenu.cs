@@ -26,17 +26,21 @@ namespace Network_Learning.Scripts
 
         private void Awake()
         {
-            networkManager = CustomNetworkManager.instance;
-            
             hostButton.onClick.AddListener(OnClickHost);
             _inputField.onEndEdit.AddListener(OnEndEditAddress);
             connectButton.onClick.AddListener(OnClickConnect);
+        }
 
+        private void Start()
+        {
+            networkManager = CustomNetworkManager.instance;
+            transport = networkManager.GetComponent<KcpTransport>();
+            
             CustomNetworkDiscovery discovery = networkManager.discovery;
             discovery.onServerFound.AddListener(OnFoundServer);
             discovery.StartDiscovery();
         }
-        
+
 
         private void OnClickHost() => networkManager.StartHost();
         private void OnEndEditAddress(string _value) => networkManager.networkAddress = _value;

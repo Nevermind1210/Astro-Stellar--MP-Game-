@@ -27,7 +27,7 @@ namespace Network_Learning.Scripts.Networking
             button.onClick.AddListener(() =>
             {
                 // Set the ipAddress to the endpoint address
-                networkManager.networkAddress = _response.EndPoint.Address.ToString();
+                networkManager.networkAddress = response.EndPoint.Address.ToString();
                 // Change the port to the correct type and assign the port to it
                 transport.Port = response.port;
                 // Start the client with the address information
@@ -43,20 +43,20 @@ namespace Network_Learning.Scripts.Networking
 
         private void Update()
         {
-            Ping pingSender = new Ping();
-            PingOptions options = new PingOptions
-            {
-                DontFragment = true
-            };
-
-            const string DATA = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa FUCK";
-            byte[] buffer = Encoding.ASCII.GetBytes(DATA);
-            const int TIMEOUT = 120;
-            PingReply reply = pingSender.Send(response.EndPoint.Address, TIMEOUT, buffer, options);
-            if(reply?.Status == IPStatus.Success)
-            {
-                gameInformation.text = $"<b>{response.EndPoint.Address}</b>\n<size={gameInformation.fontSize / 2}>Ping: {reply.RoundtripTime}</size>";
-            }
+            // Ping pingSender = new Ping();
+            // PingOptions options = new PingOptions
+            // {
+            //     DontFragment = true
+            // };
+            //
+            // const string DATA = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa FUCK";
+            // byte[] buffer = Encoding.ASCII.GetBytes(DATA);
+            // const int TIMEOUT = 120;
+            // PingReply reply = pingSender.Send(response.EndPoint.Address, TIMEOUT, buffer, options);
+            // if(reply?.Status == IPStatus.Success)
+            // {
+            //     gameInformation.text = $"<b>{response.EndPoint.Address}</b>\n<size={gameInformation.fontSize / 2}>Ping: {reply.RoundtripTime}</size>";
+            // }
         }
     }
 }
