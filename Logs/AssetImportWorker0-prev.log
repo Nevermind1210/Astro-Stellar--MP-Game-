@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 16168 MB
+OS: 'Windows 10 Pro; OS build 22000.258; Version 2009; 64bit' Language: 'en' Physical Memory: 32703 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,105 +11,94 @@ C:\Program Files\Unity\Hub\Editor\2020.2.2f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/steve/Documents/GitHub/Astro-Stellar--MP-Game-
+F:/Unity Projects/Astro-Stellar -MP Game-/Astro-Stellar--MP-Game-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53640
-Successfully changed project path to: C:/Users/steve/Documents/GitHub/Astro-Stellar--MP-Game-
-C:/Users/steve/Documents/GitHub/Astro-Stellar--MP-Game-
+58703
+Successfully changed project path to: F:/Unity Projects/Astro-Stellar -MP Game-/Astro-Stellar--MP-Game-
+F:/Unity Projects/Astro-Stellar -MP Game-/Astro-Stellar--MP-Game-
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.86 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 54.67 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/steve/Documents/GitHub/Astro-Stellar--MP-Game-/Assets
+[Subsystems] Discovering subsystems at path F:/Unity Projects/Astro-Stellar -MP Game-/Astro-Stellar--MP-Game-/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f55)
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2206)
     Vendor:   
-    VRAM:     5980 MB
-    Driver:   27.21.14.6230
+    VRAM:     10078 MB
+    Driver:   30.0.14.9613
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56644
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002039 seconds.
+Registered in 0.002267 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 35.34 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 47.19 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.649 seconds
+- Completed reload, in  3.059 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002289 seconds.
+Registered in 0.003330 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.925 seconds
+- Completed reload, in  1.325 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2051 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 103.8 MB.
-System memory in use after: 103.9 MB.
+Unloading 2054 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.3 MB.
+System memory in use after: 104.4 MB.
 
-Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 2493.
-Total: 2.797000 ms (FindLiveObjects: 0.194200 ms CreateObjectMapping: 0.076900 ms MarkObjects: 2.277400 ms  DeleteObjects: 0.247700 ms)
+Unloading 79 unused Assets to reduce memory usage. Loaded Objects now: 2499.
+Total: 3.360200 ms (FindLiveObjects: 0.247500 ms CreateObjectMapping: 0.094800 ms MarkObjects: 2.814500 ms  DeleteObjects: 0.201900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Astro-Stellar/Scenes/Online A1S.unity
-  artifactKey: Guid(95e79da8abfc7b344952588f02f65209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar/Scenes/Online A1S.unity using Guid(95e79da8abfc7b344952588f02f65209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfed34cae765cde367ba1926f57ca35b') in 0.014717 seconds
-  Import took 0.019346 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 2.44 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.0 MB.
-System memory in use after: 61.1 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2493.
-Total: 2.578500 ms (FindLiveObjects: 0.200900 ms CreateObjectMapping: 0.082800 ms MarkObjects: 2.193200 ms  DeleteObjects: 0.100700 ms)
+  path: Assets/Astro-Stellar/Scripts/Xavier/HUD Manager.cs
+  artifactKey: Guid(e91092af837b4a6781f72a56378e9a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/HUD Manager.cs using Guid(e91092af837b4a6781f72a56378e9a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27c0da27ebd6076593891415cc67d64') in 0.210438 seconds
+  Import took 0.219301 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 172.044474 seconds.
+  Time since last request: 12.095920 seconds.
   path: Assets/Astro-Stellar/Scenes/Offline A1S.unity
   artifactKey: Guid(5e5ff5ca1a471b543ba573d93bc610c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar/Scenes/Offline A1S.unity using Guid(5e5ff5ca1a471b543ba573d93bc610c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363f77733cdf61d8d38fadfb3fcb7f2a') in 0.013225 seconds
-  Import took 0.017204 seconds .
+Start importing Assets/Astro-Stellar/Scenes/Offline A1S.unity using Guid(5e5ff5ca1a471b543ba573d93bc610c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebfceabae1fb8409daf2393f798a752') in 0.037134 seconds
+  Import took 0.129002 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001885 seconds.
+Registered in 0.006512 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -124,30 +113,447 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.711 seconds
+- Completed reload, in  1.478 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2003 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.0 MB.
-System memory in use after: 102.1 MB.
+Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.7 MB.
+System memory in use after: 101.7 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2495.
-Total: 1.920800 ms (FindLiveObjects: 0.217800 ms CreateObjectMapping: 0.113300 ms MarkObjects: 1.490700 ms  DeleteObjects: 0.098400 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2501.
+Total: 5.089600 ms (FindLiveObjects: 0.712000 ms CreateObjectMapping: 0.130900 ms MarkObjects: 4.112400 ms  DeleteObjects: 0.132800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 858.480960 seconds.
+  Time since last request: 137.461325 seconds.
   path: Assets/Astro-Stellar/Scenes/Online A1S.unity
   artifactKey: Guid(95e79da8abfc7b344952588f02f65209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar/Scenes/Online A1S.unity using Guid(95e79da8abfc7b344952588f02f65209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c899b09732cea2bf6ec9791ae6e4b32c') in 0.014596 seconds
-  Import took 0.018333 seconds .
+Start importing Assets/Astro-Stellar/Scenes/Online A1S.unity using Guid(95e79da8abfc7b344952588f02f65209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23d8e25f718b3cc0855d8e2a987def1') in 0.079959 seconds
+  Import took 0.113648 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.776229 seconds.
-  path: Assets/Astro-Stellar/Scenes/Offline A1S.unity
-  artifactKey: Guid(5e5ff5ca1a471b543ba573d93bc610c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Astro-Stellar/Scenes/Offline A1S.unity using Guid(5e5ff5ca1a471b543ba573d93bc610c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c63a0c00b819e64748c658a3a1174ca7') in 0.004416 seconds
-  Import took 0.017651 seconds .
+  Time since last request: 7.804943 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Item Organic.prefab
+  artifactKey: Guid(85da13f4e36db664d9398c61a49316da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Item Organic.prefab using Guid(85da13f4e36db664d9398c61a49316da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75a6bcca8a268ce10557d423551b05d') in 0.222846 seconds
+  Import took 0.230645 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Item Ship Part.prefab
+  artifactKey: Guid(60b01a57cbf71364ab7eb3c183dafb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Item Ship Part.prefab using Guid(60b01a57cbf71364ab7eb3c183dafb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb6eb9f9f8437cf79ad483d7c5ff109') in 0.114383 seconds
+  Import took 0.134891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Player New.prefab
+  artifactKey: Guid(b2186c00dd372ec46b1950ee4051bab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Player New.prefab using Guid(b2186c00dd372ec46b1950ee4051bab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18b14e5a91b929f38bf61e6345c7bf9') in 0.124028 seconds
+  Import took 0.126995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Astro-Stellar/Prefabs/Options Menu (Mobile).prefab
+  artifactKey: Guid(fe3a84095faf5b84ba0b7a7d07981e6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Prefabs/Options Menu (Mobile).prefab using Guid(fe3a84095faf5b84ba0b7a7d07981e6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6fa35f0283eb9d2b9f713e88ce477f') in 0.169103 seconds
+  Import took 0.173689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.970024 seconds.
+  path: Assets/Astro-Stellar/Art/Models
+  artifactKey: Guid(51865d8bb8ac7004ca688a32f1ee690f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Art/Models using Guid(51865d8bb8ac7004ca688a32f1ee690f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89de99dd6b058de255c1eb84c24ee53d') in 0.446045 seconds
+  Import took 0.450573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Astro-Stellar/Art/Models/spaceship_geo.fbx
+  artifactKey: Guid(366c9dad65d5c7c489637496df1f805f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Art/Models/spaceship_geo.fbx using Guid(366c9dad65d5c7c489637496df1f805f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '871a6ba6c9da06710c2bc75ea9920a4a') in 0.183695 seconds
+  Import took 0.187470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 217.268080 seconds.
+  path: Assets/Astro-Stellar/Scenes/MainMenu.unity
+  artifactKey: Guid(eaf2fe70f2e2a1a4badc397612716621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scenes/MainMenu.unity using Guid(eaf2fe70f2e2a1a4badc397612716621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911b0c2c6cc64f0c7bfe98eff529d3de') in 0.102046 seconds
+  Import took 0.106240 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005638 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.319 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.0 MB.
+System memory in use after: 106.1 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2548.
+Total: 8.250800 ms (FindLiveObjects: 0.375000 ms CreateObjectMapping: 0.471400 ms MarkObjects: 7.077300 ms  DeleteObjects: 0.325000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 212.943794 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b376042f364f16cf4f31d4ebb3f3ca0d') in 0.101656 seconds
+  Import took 0.142212 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003700 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.270 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.8 MB.
+System memory in use after: 105.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2551.
+Total: 2.126700 ms (FindLiveObjects: 0.199300 ms CreateObjectMapping: 0.072000 ms MarkObjects: 1.758300 ms  DeleteObjects: 0.095800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 186.330727 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f2b0cfa3456174457f0122e8d246fd') in 0.082045 seconds
+  Import took 0.116346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062722 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f2b0cfa3456174457f0122e8d246fd') in 0.077028 seconds
+  Import took 0.084395 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003363 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.347 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.0 MB.
+System memory in use after: 106.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2553.
+Total: 5.411300 ms (FindLiveObjects: 1.457400 ms CreateObjectMapping: 0.223900 ms MarkObjects: 3.585200 ms  DeleteObjects: 0.143000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.368473 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc8a509680f9febecf685994ff8f42b') in 0.145864 seconds
+  Import took 0.209101 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003391 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.180 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.0 MB.
+System memory in use after: 106.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2555.
+Total: 2.272500 ms (FindLiveObjects: 0.254300 ms CreateObjectMapping: 0.090900 ms MarkObjects: 1.823600 ms  DeleteObjects: 0.102300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 397.058424 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a7cf8413b18270ce335b87c5d0f0e8') in 0.115587 seconds
+  Import took 0.255902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.643620 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e008fe9888b07184513a0b995c3db4') in 0.059626 seconds
+  Import took 0.066579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.805267 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e689f6dd7b04eaf10ebef3286cd53e1a') in 0.043246 seconds
+  Import took 0.047724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.093630 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e689f6dd7b04eaf10ebef3286cd53e1a') in 0.065678 seconds
+  Import took 0.076039 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003170 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.234 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.9 MB.
+System memory in use after: 105.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2557.
+Total: 5.111900 ms (FindLiveObjects: 1.276300 ms CreateObjectMapping: 0.741700 ms MarkObjects: 2.919700 ms  DeleteObjects: 0.172300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.696132 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de46143e36a4a05482893c306ac15902') in 0.077296 seconds
+  Import took 0.080982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070000 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de46143e36a4a05482893c306ac15902') in 0.079809 seconds
+  Import took 0.089963 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004607 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.195 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.1 MB.
+System memory in use after: 106.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2559.
+Total: 2.464000 ms (FindLiveObjects: 0.227000 ms CreateObjectMapping: 0.090300 ms MarkObjects: 2.037200 ms  DeleteObjects: 0.108500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 114.570252 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755f2fcacecfdc4495ccbb280751637c') in 0.070758 seconds
+  Import took 0.079758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.166300 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs
+  artifactKey: Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/PauseMenu.cs using Guid(ff0236ed46bb74844a332427a75fc201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755f2fcacecfdc4495ccbb280751637c') in 0.111963 seconds
+  Import took 0.115547 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003070 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.273 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.1 MB.
+System memory in use after: 106.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2561.
+Total: 4.100000 ms (FindLiveObjects: 0.380000 ms CreateObjectMapping: 0.139500 ms MarkObjects: 3.340500 ms  DeleteObjects: 0.223200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.520210 seconds.
+  path: Assets/Astro-Stellar/Scripts/Xavier/OptionMenu.cs
+  artifactKey: Guid(928f9c43162d6d64c85a68828a59571c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Astro-Stellar/Scripts/Xavier/OptionMenu.cs using Guid(928f9c43162d6d64c85a68828a59571c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573f97696e6bb116edb5f56d429490cc') in 0.123342 seconds
+  Import took 0.127293 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003380 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.4.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.544 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.9 MB.
+System memory in use after: 106.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2563.
+Total: 2.918800 ms (FindLiveObjects: 0.314500 ms CreateObjectMapping: 0.118000 ms MarkObjects: 2.329200 ms  DeleteObjects: 0.155300 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
