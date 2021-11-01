@@ -17,6 +17,8 @@ namespace A1
     /// </summary>
     public class ItemManager : NetworkBehaviour
     {
+        //todo make these lists syncLists and they should sync across the network.
+        //todo might need to make some fo the variable sync vars too. total group score
         [Header("Items Lists")]
         [SerializeField] private List<Item> organicItems = new List<Item>();
         [SerializeField] private List<Item> partItems = new List<Item>();
@@ -33,8 +35,13 @@ namespace A1
         public List<GameObject> partsUI = new List<GameObject>();
         private int index;
         [SerializeField] private TMP_Text organicsText;
+        [SerializeField] private TMP_Text popupText;
+
+        private bool allPartsFound;
+        private bool allOrganicsFound;
 
 
+        [Server]
         private void OnCollisionEnter(Collision _collision)
         {
             if(_collision.gameObject.CompareTag("Player"))
@@ -67,13 +74,11 @@ namespace A1
 
                     RpcPassItemToManager(item);
                     // Set the tranforms of the item and deactivate
-                    // item.gameObject.transform.parent = this.transform;
-                    // item.gameObject.transform.position = this.transform.position;
-                    // item.gameObject.SetActive(false);
+                    
                     // Set the player item slot to null so they can pick up another item.
                     player.itemHolding = null;
                     
-                    // CheckCounts();
+                    CheckCounts();
                 }
                 else
                 {
@@ -82,6 +87,12 @@ namespace A1
             }
         }
 
+        
+        
+        /// <summary>
+        /// Passes the item to the manager and sets inactive.
+        /// </summary>
+        /// <param name="_item"> The Item being passed to the manager.</param>
         [ClientRpc]
         public void RpcPassItemToManager(Item _item)
         {
@@ -97,6 +108,7 @@ namespace A1
         public void RpcDisplayOrganicsCount()
         {
             organicsText.text = organicItems.Count.ToString();
+            // might need to use a sync var here??
         }
         
         /// <summary>
@@ -114,23 +126,48 @@ namespace A1
         /// </summary>
         private void CheckCounts()
         {
-            if(organicItems.Count == organicsCount)
+            if(organicItems.Count == organicsCount && !allOrganicsFound)
             {
                 Debug.Log("All organics have been found");
+                RpcPopupText("All organics have been found.");
+                allOrganicsFound = true;
+
             }
             
-            if(partItems.Count == partsCount)
+            if(partItems.Count == partsCount && !allPartsFound)
             {
                 Debug.Log("All parts have been found");
-                // todo UI display showing all parts have been found.
+                RpcPopupText("All ship parts have been found.");
+                allPartsFound = true;
             }
         }
 
+        /// <summary>
+        /// Popup text to display item status to all clients.
+        /// </summary>
+        /// <param name="_text">Message to display</param>
+        [ClientRpc]
+        public void RpcPopupText(string _text)
+        {
+            popupText.text = _text;
+            popupText.gameObject.SetActive(true);
+            Invoke(nameof(HidePopup),3);
+        }
+
+        /// <summary>
+        /// Hides the popup.
+        /// </summary>
+        
+        public void HidePopup() => popupText.gameObject.SetActive(false);
+
+        
         // Start is called before the first frame update
         void Start()
         {
-        
         }
+
+        
+        
 
         // Update is called once per frame
         void Update()
