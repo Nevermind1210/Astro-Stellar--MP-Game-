@@ -4741,7 +4741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  timeRemaining: 120
+  timeRemaining: 180
   timer: {fileID: 1184513761}
 --- !u!4 &1464715105
 Transform:
