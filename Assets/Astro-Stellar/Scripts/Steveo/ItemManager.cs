@@ -17,8 +17,7 @@ namespace A1
     /// </summary>
     public class ItemManager : NetworkBehaviour
     {
-        //todo make these lists syncLists and they should sync across the network.
-        //todo might need to make some fo the variable sync vars too. total group score
+        
         [Header("Items Lists")]
         public SyncList<Item> organicItems = new SyncList<Item>();
         public SyncList<Item> partItems = new SyncList<Item>();
@@ -29,16 +28,18 @@ namespace A1
         [SerializeField] private int organicsValue = 10;
         [SerializeField] private int partsValue = 20;
         [Header("Total Group Score")]
-        [SerializeField] private int totalScore;
+        [SyncVar, SerializeField] private int totalScore;
 
         [Header("UI Elements")]
         public List<GameObject> partsUI = new List<GameObject>();
         private int index;
         [SerializeField] private TMP_Text organicsText;
         [SerializeField] private TMP_Text popupText;
+        [SerializeField] private TMP_Text totalScoreText;
 
         private bool allPartsFound;
         private bool allOrganicsFound;
+        [SyncVar] public bool coOpMode;
 
 
         [Server]
@@ -58,7 +59,6 @@ namespace A1
                                 organicItems.Add(item);
                                 totalScore += organicsValue;
                                 player.personalScore += organicsValue;
-                                //RpcDisplayOrganicsCount();
                                 break;
                             case ItemType.ShipPart:
                                 partItems.Add(item);
@@ -72,8 +72,8 @@ namespace A1
 
                     }
 
-                    RpcPassItemToManager(item);
                     // Set the tranforms of the item and deactivate
+                    RpcPassItemToManager(item);
                     
                     // Set the player item slot to null so they can pick up another item.
                     player.itemHolding = null;
@@ -101,15 +101,7 @@ namespace A1
             _item.gameObject.SetActive(false);
         }
 
-        /// <summary>
-        /// Displays the oganics count collected to all clients.
-        /// </summary>
-        [ClientRpc]
-        public void RpcDisplayOrganicsCount()
-        {
-            organicsText.text = organicItems.Count.ToString();
-            // might need to use a sync var here??
-        }
+        
         
         /// <summary>
         /// Displays the next parts UI for all clients.
@@ -157,13 +149,13 @@ namespace A1
         /// <summary>
         /// Hides the popup.
         /// </summary>
-        
         public void HidePopup() => popupText.gameObject.SetActive(false);
 
         
         // Start is called before the first frame update
         void Start()
         {
+            totalScoreText.gameObject.SetActive(coOpMode);
         }
 
         
@@ -173,6 +165,7 @@ namespace A1
         void Update()
         {
             organicsText.text = organicItems.Count.ToString();
+            totalScoreText.text = $"Total Group Score: {totalScore.ToString()}";
 
         }
     }
