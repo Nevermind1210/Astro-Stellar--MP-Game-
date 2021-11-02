@@ -20,8 +20,8 @@ namespace A1
         //todo make these lists syncLists and they should sync across the network.
         //todo might need to make some fo the variable sync vars too. total group score
         [Header("Items Lists")]
-        [SerializeField] private List<Item> organicItems = new List<Item>();
-        [SerializeField] private List<Item> partItems = new List<Item>();
+        public SyncList<Item> organicItems = new SyncList<Item>();
+        public SyncList<Item> partItems = new SyncList<Item>();
         [Header("Items Level Counts")]
         [SerializeField] private int organicsCount;
         [SerializeField] private int partsCount;
@@ -58,7 +58,7 @@ namespace A1
                                 organicItems.Add(item);
                                 totalScore += organicsValue;
                                 player.personalScore += organicsValue;
-                                RpcDisplayOrganicsCount();
+                                //RpcDisplayOrganicsCount();
                                 break;
                             case ItemType.ShipPart:
                                 partItems.Add(item);
@@ -172,7 +172,8 @@ namespace A1
         // Update is called once per frame
         void Update()
         {
-        
+            organicsText.text = organicItems.Count.ToString();
+
         }
     }
 }
