@@ -1,13 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using A1;
 using Mirror;
 using TMPro;
 using UnityEngine;
 
 public class CountdownToLose : NetworkBehaviour
 { 
+   [Header("Timer Set")]
    [SerializeField,SyncVar] private float timeRemaining = 10;
+
+   private ItemManager _itemManager;
    [SyncVar] private float minutes;
    [SyncVar] private float seconds;
    public TextMeshProUGUI timer;
@@ -16,6 +20,7 @@ public class CountdownToLose : NetworkBehaviour
    
    private void Start()
    {
+      _itemManager = FindObjectOfType<ItemManager>();
       timerRunning = true;
    }
    
@@ -34,6 +39,7 @@ public class CountdownToLose : NetworkBehaviour
       else
       {
          Debug.LogError("Time has ran out!");
+         _itemManager.RpcPopupText("Time has ran out!");
          timeRemaining = 0;
          timerRunning = false;
       }
