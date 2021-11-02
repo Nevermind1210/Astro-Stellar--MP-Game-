@@ -39,9 +39,12 @@ public class CountdownToLose : NetworkBehaviour
       else
       {
          Debug.LogError("Time has ran out!");
-         _itemManager.RpcPopupText("Time has ran out!");
-         timeRemaining = 0;
-         timerRunning = false;
+         if (timerRunning)
+         {
+            _itemManager.RpcPopupText("Time has ran out!");
+            timeRemaining = 0;
+            timerRunning = false;
+         }
       }
    }
    
