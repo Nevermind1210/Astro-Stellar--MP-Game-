@@ -40,8 +40,6 @@ namespace A1
                 if(player.itemHolding == null)
                 {
                     RpcPickupItem(player);
-                    // transform.parent = player.itemLocation.transform;
-                    // transform.position = player.itemLocation.position;
                     player.itemHolding = this;
                 }
                 else
