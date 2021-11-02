@@ -7,9 +7,7 @@ namespace AltarChase.Scripts.Xavier_Scripts
     {
         public void PlayGame()
         {
-            Debug.Log("I DO NOTHING NOW");
-            
-            //SceneManager.LoadScene("SomethingHere");
+            SceneManager.LoadScene("Offline A1S");
         }
         
         public void QuitGame()
