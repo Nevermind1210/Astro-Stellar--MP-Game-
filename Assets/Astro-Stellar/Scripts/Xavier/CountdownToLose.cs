@@ -45,6 +45,7 @@ public class CountdownToLose : NetworkBehaviour
             timeRemaining = 0;
             timerRunning = false;
          }
+         timer.text = "0:00";
       }
    }
    
