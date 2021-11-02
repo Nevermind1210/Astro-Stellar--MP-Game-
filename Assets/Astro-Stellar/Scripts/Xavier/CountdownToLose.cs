@@ -6,10 +6,12 @@ using TMPro;
 using UnityEngine;
 
 public class CountdownToLose : NetworkBehaviour
-{
-   public float timeRemaining = 10;
+{ 
+   [SerializeField,SyncVar] private float timeRemaining = 10;
+   [SyncVar] private float minutes;
+   [SyncVar] private float seconds;
    public TextMeshProUGUI timer;
-
+  
    private static bool timerRunning = false;
    
    private void Start()
@@ -18,6 +20,11 @@ public class CountdownToLose : NetworkBehaviour
    }
    
    private void Update()
+   {
+      TimeOnEveryone();
+   }
+   
+   void TimeOnEveryone()
    {
       if (timeRemaining > 0)
       {
@@ -31,12 +38,11 @@ public class CountdownToLose : NetworkBehaviour
          timerRunning = false;
       }
    }
-
-   [Server]
+   
    void ServerDisplayTime(float timeToDisplay)
    {
-      float minutes = Mathf.FloorToInt(timeToDisplay / 60);
-      float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+      minutes = Mathf.FloorToInt(timeToDisplay / 60); 
+      seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
       timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
    }
