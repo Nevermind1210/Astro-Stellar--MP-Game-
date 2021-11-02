@@ -47,22 +47,25 @@ namespace Network_Learning.Scripts
 
         private void OnClickConnect()
         {
-            string address = _inputField.text;
-            ushort port = 5555;
-            if (address.Contains(":"))
+            string address = _inputField.text.Trim((char)8203);
+            ushort port = 7777;
+            //if the address contains a colon, it has a port
+            if(address.Contains(":"))
             {
+                //get everything after the colon
                 string portID = address.Substring(address.IndexOf(":", StringComparison.Ordinal) + 1);
+                //turn it into a port
                 port = ushort.Parse(portID);
+                //remove the port from the address
                 address = address.Substring(0, address.IndexOf(":", StringComparison.Ordinal));
             }
-            
-            
-            if (!IPAddress.TryParse(address, out IPAddress ipAddress))
+			
+            if(!IPAddress.TryParse(address, out IPAddress ipAddress))
             {
                 Debug.LogError($"Invalid IP: {address}");
                 address = "localhost";
             }
-            
+			
             transport.Port = port;
             networkManager.networkAddress = address;
             networkManager.StartClient();
