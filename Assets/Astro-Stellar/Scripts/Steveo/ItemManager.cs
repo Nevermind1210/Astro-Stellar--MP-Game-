@@ -5,7 +5,7 @@ using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using Network_Learning.Scripts.Networking;
 using TMPro;
 
 using UnityEngine;
@@ -155,6 +155,7 @@ namespace A1
         // Start is called before the first frame update
         void Start()
         {
+            coOpMode = CustomNetworkManager.instance.coopMode;
             totalScoreText.gameObject.SetActive(coOpMode);
         }
 
