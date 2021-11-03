@@ -1,3 +1,5 @@
+using A1.Player;
+
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
@@ -71,6 +73,18 @@ namespace Network_Learning.Scripts.Networking
       public bool coopMode;
       public Toggle toggleCoop;
       
+      // THIS IS THE NEW FUNCTIONS FOR OUR PLAYER
+      
+      /// <summary> Adds a player to the dictionary </summary>
+      public static void AddPlayerNew([NotNull] PlayerInteract _player) => instance._playersNew.Add(_player.netId, _player);
+      
+      /// <summary>
+      /// the dictionary of all connected players using their NetID as the key.
+      /// </summary>
+      public Dictionary<uint, PlayerInteract> _playersNew = new Dictionary<uint, PlayerInteract>();
+
+      
+
       /// <summary>
       /// Setting variable
       /// </summary>

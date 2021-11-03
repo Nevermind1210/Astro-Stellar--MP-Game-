@@ -20,24 +20,59 @@ namespace Astro_Stellar
 	public class PlayerScores : NetworkBehaviour
 	{
 		private CustomNetworkManager instance = CustomNetworkManager.instance;
-
 		[SerializeField] private GameObject playerScorePanel;
-		[SerializeField] private TMP_Text playerName;
-		[SerializeField] private TMP_Text playerScore;
+		
+		
+		public SyncList<PlayerInteract> playerList = new SyncList<PlayerInteract>();
+		
 
+		public SyncList<PlayerScorePanel> panels = new SyncList<PlayerScorePanel>();
+
+		[Server]
 		public void GetActivePlayers()
 		{
-			foreach(NetworkPlayer player in instance._players.Values)
+			panels.Clear();
+			foreach(PlayerInteract player in playerList)
 			{
-				Instantiate(playerScorePanel);
-				playerName.text = player.name;
-				playerScore.text = player.GetComponent<PlayerInteract>().personalScore.ToString();
+				Debug.Log("in the for loop");
+				GameObject scorePanel = Instantiate(playerScorePanel,this.transform);
+				scorePanel.gameObject.SetActive(true);
+				PlayerScorePanel panel = scorePanel.GetComponent<PlayerScorePanel>();
+				panel.player = player;
+				panel.playerName.text = player.name;
+				player.personalScoreText = panel.playerScore;
+				panels.Add(panel);
+				NetworkServer.Spawn(scorePanel);
 			}
+			Debug.Log("past the loop");
 		}
 
-		private void OnConnectedToServer()
+		
+
+		private void Start()
 		{
-			GetActivePlayers();
+			//GetActivePlayers();
 		}
+
+		[Server]
+		private void Update()
+		{
+			// foreach(PlayerScorePanel panel in panels)
+			// {
+			// 	panel.playerScore.text = panel.player.personalScore.ToString();
+			// }
+		}
+
+
+		[Server]
+		public void AddPlayer(PlayerInteract _player) => playerList.Add(_player);
+
+
+
+
+		// private void OnConnectedToServer()
+		// {
+		// 	GetActivePlayers();
+		// }
 	}
 }
