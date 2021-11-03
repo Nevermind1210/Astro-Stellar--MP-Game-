@@ -68,7 +68,7 @@ namespace Network_Learning.Scripts.Networking
 
       public CustomNetworkDiscovery discovery;
 
-      [SyncVar] public bool coopMode;
+      public bool coopMode;
       public Toggle toggleCoop;
       
       /// <summary>
