@@ -64,7 +64,10 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   discovery: {fileID: 3262019300228553453}
+  coopMode: 1
+  toggleCoop: {fileID: 0}
 --- !u!114 &3262019300228553454
 MonoBehaviour:
   m_ObjectHideFlags: 0

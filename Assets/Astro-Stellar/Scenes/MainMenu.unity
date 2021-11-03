@@ -131,17 +131,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3262019300228553451, guid: 32129c8b0778a75429131f63425e1151, type: 3}
-      propertyPath: coopMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3262019300228553451, guid: 32129c8b0778a75429131f63425e1151, type: 3}
       propertyPath: toggleCoop
       value: 
       objectReference: {fileID: 1973462736}
-    - target: {fileID: 3262019300228553451, guid: 32129c8b0778a75429131f63425e1151, type: 3}
-      propertyPath: spawnPrefabs.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3262019300228553452, guid: 32129c8b0778a75429131f63425e1151, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2843,7 +2835,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: -103.35986}
+  m_AnchoredPosition: {x: 0.00024414062, y: -103.35986}
   m_SizeDelta: {x: 0, y: -206.7195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8315566656633099491

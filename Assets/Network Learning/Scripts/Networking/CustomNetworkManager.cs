@@ -82,7 +82,7 @@ namespace Network_Learning.Scripts.Networking
 
       public override void Start()
       {
-         if (!toggleCoop)
+         if (toggleCoop != null)
          {
             toggleCoop.onValueChanged.AddListener(BoolCheck);
          }
