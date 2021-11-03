@@ -5,7 +5,7 @@ using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using Network_Learning.Scripts.Networking;
 using TMPro;
 
 using UnityEngine;
@@ -17,9 +17,10 @@ namespace A1
     /// </summary>
     public class ItemManager : NetworkBehaviour
     {
+        
         [Header("Items Lists")]
-        [SerializeField] private List<Item> organicItems = new List<Item>();
-        [SerializeField] private List<Item> partItems = new List<Item>();
+        public SyncList<Item> organicItems = new SyncList<Item>();
+        public SyncList<Item> partItems = new SyncList<Item>();
         [Header("Items Level Counts")]
         [SerializeField] private int organicsCount;
         [SerializeField] private int partsCount;
@@ -27,14 +28,21 @@ namespace A1
         [SerializeField] private int organicsValue = 10;
         [SerializeField] private int partsValue = 20;
         [Header("Total Group Score")]
-        [SerializeField] private int totalScore;
+        [SyncVar, SerializeField] private int totalScore;
 
         [Header("UI Elements")]
         public List<GameObject> partsUI = new List<GameObject>();
         private int index;
         [SerializeField] private TMP_Text organicsText;
+        [SerializeField] private TMP_Text popupText;
+        [SerializeField] private TMP_Text totalScoreText;
+
+        private bool allPartsFound;
+        private bool allOrganicsFound;
+        [SyncVar] public bool coOpMode;
 
 
+        [Server]
         private void OnCollisionEnter(Collision _collision)
         {
             if(_collision.gameObject.CompareTag("Player"))
@@ -51,7 +59,6 @@ namespace A1
                                 organicItems.Add(item);
                                 totalScore += organicsValue;
                                 player.personalScore += organicsValue;
-                                RpcDisplayOrganicsCount();
                                 break;
                             case ItemType.ShipPart:
                                 partItems.Add(item);
@@ -65,15 +72,13 @@ namespace A1
 
                     }
 
-                    RpcPassItemToManager(item);
                     // Set the tranforms of the item and deactivate
-                    // item.gameObject.transform.parent = this.transform;
-                    // item.gameObject.transform.position = this.transform.position;
-                    // item.gameObject.SetActive(false);
+                    RpcPassItemToManager(item);
+                    
                     // Set the player item slot to null so they can pick up another item.
                     player.itemHolding = null;
                     
-                    // CheckCounts();
+                    CheckCounts();
                 }
                 else
                 {
@@ -82,6 +87,12 @@ namespace A1
             }
         }
 
+        
+        
+        /// <summary>
+        /// Passes the item to the manager and sets inactive.
+        /// </summary>
+        /// <param name="_item"> The Item being passed to the manager.</param>
         [ClientRpc]
         public void RpcPassItemToManager(Item _item)
         {
@@ -90,14 +101,7 @@ namespace A1
             _item.gameObject.SetActive(false);
         }
 
-        /// <summary>
-        /// Displays the oganics count collected to all clients.
-        /// </summary>
-        [ClientRpc]
-        public void RpcDisplayOrganicsCount()
-        {
-            organicsText.text = organicItems.Count.ToString();
-        }
+        
         
         /// <summary>
         /// Displays the next parts UI for all clients.
@@ -114,28 +118,60 @@ namespace A1
         /// </summary>
         private void CheckCounts()
         {
-            if(organicItems.Count == organicsCount)
+            if(organicItems.Count == organicsCount && !allOrganicsFound)
             {
                 Debug.Log("All organics have been found");
+                RpcPopupText("All organics have been found.");
+                allOrganicsFound = true;
+
             }
             
-            if(partItems.Count == partsCount)
+            if(partItems.Count == partsCount && !allPartsFound)
             {
                 Debug.Log("All parts have been found");
-                // todo UI display showing all parts have been found.
+                RpcPopupText("All ship parts have been found.");
+                allPartsFound = true;
             }
         }
 
+        /// <summary>
+        /// Popup text to display item status to all clients.
+        /// </summary>
+        /// <param name="_text">Message to display</param>
+        [ClientRpc]
+        public void RpcPopupText(string _text)
+        {
+            popupText.text = _text;
+            popupText.gameObject.SetActive(true);
+            Invoke(nameof(HidePopup),3);
+        }
+
+        /// <summary>
+        /// Hides the popup.
+        /// </summary>
+        public void HidePopup() => popupText.gameObject.SetActive(false);
+
+        
         // Start is called before the first frame update
         void Start()
         {
-        
+            //coOpMode = CustomNetworkManager.instance.coopMode;
+            totalScoreText.gameObject.SetActive(coOpMode);
         }
+
+        public override void OnStartServer()
+        {
+            coOpMode = CustomNetworkManager.instance.coopMode;
+
+        }
+
 
         // Update is called once per frame
         void Update()
         {
-        
+            organicsText.text = organicItems.Count.ToString();
+            totalScoreText.text = $"Total Group Score: {totalScore.ToString()}";
+
         }
     }
 }
