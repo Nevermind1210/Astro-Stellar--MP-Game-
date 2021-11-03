@@ -155,12 +155,16 @@ namespace A1
         // Start is called before the first frame update
         void Start()
         {
-            coOpMode = CustomNetworkManager.instance.coopMode;
+            //coOpMode = CustomNetworkManager.instance.coopMode;
             totalScoreText.gameObject.SetActive(coOpMode);
         }
 
-        
-        
+        public override void OnStartServer()
+        {
+            coOpMode = CustomNetworkManager.instance.coopMode;
+
+        }
+
 
         // Update is called once per frame
         void Update()
