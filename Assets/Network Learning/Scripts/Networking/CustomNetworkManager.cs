@@ -72,6 +72,13 @@ namespace Network_Learning.Scripts.Networking
       public Toggle toggleCoop;
       
       /// <summary>
+      /// the dictionary of all connected players using their NetID as the key.
+      /// </summary>
+      public Dictionary<uint, NetworkPlayer> _newPlayers = new Dictionary<uint, NetworkPlayer>();
+
+      
+      
+      /// <summary>
       /// Setting variable
       /// </summary>
       /// <param name="_coopMode"></param>

@@ -29,10 +29,12 @@ namespace Astro_Stellar
 		{
 			foreach(NetworkPlayer player in instance._players.Values)
 			{
+				Debug.Log("We do a little looping");
 				Instantiate(playerScorePanel);
 				playerName.text = player.name;
 				playerScore.text = player.GetComponent<PlayerInteract>().personalScore.ToString();
 			}
+			Debug.Log("We done (: or haven't done a loop D:");
 		}
 
 		private void OnConnectedToServer()

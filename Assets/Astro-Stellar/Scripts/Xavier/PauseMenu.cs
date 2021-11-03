@@ -1,20 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
+using Network_Learning.Scripts.Networking;
 using UnityEngine;
+using static Network_Learning.Scripts.Networking.CustomNetworkManager;
+using NetworkPlayer = Network_Learning.Scripts.Networking.NetworkPlayer;
+using TMPro;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu : NetworkBehaviour
 {
+    [Header("Lazy Initialization")]
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private TextMeshProUGUI leaveButton;
 
+    #region Properties/Whatever
+    private NetworkPlayer clientPlayer;
     public static bool isPaused = false;
+    #endregion
     
-    // Update is called once per frame
+    private void Start()
+    {
+        pauseMenu.SetActive(false);
+
+        leaveButton.text = hasAuthority ? "End Game" : "Disconnect";
+    }
+
     void Update()
     {
         // Theres a problem with doing it like this I know there are some solution to this, but the only way to close is by clicking resume
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            isPaused = true;
             if (!isPaused)
             {
                 Resume();
@@ -25,21 +41,25 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
-
-
+    
     public void Resume()
     {
         pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
         isPaused = false;
     }
 
     public void Pause()
     {
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         isPaused = true;
+    }
+
+    
+    [ClientRpc]
+    public void DisconnectClientPlayer()
+    {
+        RemovePlayer(clientPlayer);
     }
 }
