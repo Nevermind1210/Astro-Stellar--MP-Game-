@@ -64,7 +64,7 @@ namespace Network_Learning.Scripts.Networking
       /// <summary>
       /// the dictionary of all connected players using their NetID as the key.
       /// </summary>
-      private Dictionary<uint, NetworkPlayer> _players = new Dictionary<uint, NetworkPlayer>();
+      public Dictionary<uint, NetworkPlayer> _players = new Dictionary<uint, NetworkPlayer>();
 
       public CustomNetworkDiscovery discovery;
 

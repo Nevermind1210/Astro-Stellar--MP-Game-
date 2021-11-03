@@ -18,7 +18,8 @@ namespace A1.Player
 	    [SerializeField] public Item itemHolding = null;
 	    [SerializeField] public Transform itemLocation;
 	    [Header("Player Score")]
-	    public int personalScore;
+	    [SyncVar] public int personalScore;
+	    //todo make this a syncvar
 	    
         /* 
          *  update HUD
