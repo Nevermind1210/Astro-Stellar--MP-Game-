@@ -8,7 +8,7 @@ using System;
 
 using TMPro;
 
-[Serializable]
+
 public class PlayerScorePanel : NetworkBehaviour
 {
 	public PlayerInteract player;

@@ -134,10 +134,6 @@ PrefabInstance:
       propertyPath: toggleCoop
       value: 
       objectReference: {fileID: 1973462736}
-    - target: {fileID: 3262019300228553451, guid: 32129c8b0778a75429131f63425e1151, type: 3}
-      propertyPath: playerSpawnMethod
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3262019300228553452, guid: 32129c8b0778a75429131f63425e1151, type: 3}
       propertyPath: m_RootOrder
       value: 4
