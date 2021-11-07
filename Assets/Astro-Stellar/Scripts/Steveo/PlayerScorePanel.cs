@@ -1,8 +1,9 @@
 using A1.Player;
 
+using Mirror;
+
 using System.Collections.Generic;
 using UnityEngine;
-using Mirror;
 
 using System;
 
@@ -15,4 +16,8 @@ public class PlayerScorePanel : NetworkBehaviour
 	public TMP_Text playerName;
 	public TMP_Text playerScore;
 
+	private void Update()
+	{
+		playerScore.text = player.personalScore.ToString();
+	}
 }

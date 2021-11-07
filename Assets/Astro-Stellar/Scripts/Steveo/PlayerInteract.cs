@@ -48,15 +48,14 @@ namespace A1.Player
 
 	        playerCamera = FindObjectOfType<Camera>();
 	        CustomNetworkManager.AddPlayerNew(this);
+	        
 	        scores = FindObjectOfType<PlayerScores>();
 	        scores.AddPlayer(this);
-			scores.GetActivePlayers();
-	        
-	        
-
-	        
+			//scores.GetActivePlayers();
+			
         }
 
+        
         
 
 

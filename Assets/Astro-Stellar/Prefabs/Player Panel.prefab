@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 1159840691137580866}
   - component: {fileID: 1159840691137580867}
   - component: {fileID: 3880069365861423294}
+  - component: {fileID: 7233639786250629737}
   m_Layer: 5
   m_Name: Player Panel
   m_TagString: Untagged
@@ -224,9 +225,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0087c6a89bd23d47893a8cbad45db84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   player: {fileID: 0}
   playerName: {fileID: 1159840690641467573}
   playerScore: {fileID: 1159840691575192989}
+--- !u!114 &7233639786250629737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159840691137580869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  visible: 2
+  m_AssetId: c31520825f3ec124d822b59e93e113f8
+  hasSpawned: 0
 --- !u!1 &1159840691575192991
 GameObject:
   m_ObjectHideFlags: 0
