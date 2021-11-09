@@ -1,7 +1,15 @@
+using Astro_Stellar;
+
 using Mirror;
 
+using Network_Learning.Scripts.Networking;
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
+
+using TMPro;
+
 using UnityEngine;
 
 namespace A1.Player
@@ -20,6 +28,9 @@ namespace A1.Player
 	    [Header("Player Score")]
 	    [SyncVar] public int personalScore;
 	    //todo make this a syncvar
+
+	    public TMP_Text personalScoreText;
+	    public PlayerScores scores;
 	    
         /* 
          *  update HUD
@@ -36,15 +47,25 @@ namespace A1.Player
 	        motor.enabled = isLocalPlayer;
 
 	        playerCamera = FindObjectOfType<Camera>();
+	        CustomNetworkManager.AddPlayerNew(this);
 	        
+	        scores = FindObjectOfType<PlayerScores>();
+	        scores.AddPlayer(this);
+			//scores.GetActivePlayers();
+			
         }
 
         
         
+
+
         // Start is called before the first frame update
         void Start()
         {
-        
+	        // scores = FindObjectOfType<PlayerScores>();
+	        // scores.playerList.Clear();
+	        // scores.AddPlayer(this);
+	        // scores.GetActivePlayers();
         }
 
         
@@ -55,6 +76,11 @@ namespace A1.Player
 	        {
 		        playerCamera.transform.position = transform.position + camOffset;
 		        playerCamera.transform.LookAt(transform.position);
+	        }
+
+	        if(personalScoreText != null)
+	        {
+		        personalScoreText.text = personalScore.ToString();
 	        }
         }
     }
