@@ -57,6 +57,7 @@ namespace Astro_Stellar
 				scorePanel.gameObject.SetActive(true);
 				PlayerScorePanel panel = scorePanel.GetComponent<PlayerScorePanel>();
 				panel.player = player;
+				panel.playerNetId = player.netId;
 				panel.playerName.text = player.name;
 				//player.personalScoreText = panel.playerScore;
 				panels.Add(panel);
