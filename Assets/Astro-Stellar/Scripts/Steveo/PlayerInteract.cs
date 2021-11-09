@@ -47,7 +47,7 @@ namespace A1.Player
 	        motor.enabled = isLocalPlayer;
 
 	        playerCamera = FindObjectOfType<Camera>();
-	        CustomNetworkManager.AddPlayerNew(this);
+	        CustomNetworkManager.AddPlayer(this);
 	        
 	        scores = FindObjectOfType<PlayerScores>();
 	        scores.AddPlayer(this);
