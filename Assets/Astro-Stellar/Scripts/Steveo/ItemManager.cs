@@ -156,19 +156,26 @@ namespace A1
         void Start()
         {
             //coOpMode = CustomNetworkManager.instance.coopMode;
-            totalScoreText.gameObject.SetActive(coOpMode);
         }
 
         public override void OnStartServer()
         {
-            coOpMode = CustomNetworkManager.instance.coopMode;
+            //coOpMode = CustomNetworkManager.instance.coopMode;
 
         }
+
+        [Command]
+        public void CmdCoopScore() => RpcCoopScore();
+
+        [ClientRpc]
+        public void RpcCoopScore() => totalScoreText.gameObject.SetActive(coOpMode);
 
 
         // Update is called once per frame
         void Update()
         {
+            RpcCoopScore();
+            //totalScoreText.gameObject.SetActive(CustomNetworkManager.instance.coopMode);
             organicsText.text = organicItems.Count.ToString();
             totalScoreText.text = $"Total Group Score: {totalScore.ToString()}";
 

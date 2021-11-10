@@ -32,11 +32,19 @@ namespace Networking.Scripts
 		// [SerializeField] private int index = 0;
 
 		public PlayerScores playerScores;
+		public bool coopMode;
+		public Toggle toggleCoop;
 		
 		private void Awake()
 		{
 			startButton.interactable = CustomNetworkManager.instance.isHost;
 			playerScores = FindObjectOfType<PlayerScores>();
+			
+			if (toggleCoop != null)
+			{
+				toggleCoop.onValueChanged.AddListener(BoolCheck);
+				toggleCoop.interactable = CustomNetworkManager.instance.isHost;
+			}
 		}
 
 		public void OnClickStartMatch()
@@ -72,6 +80,25 @@ namespace Networking.Scripts
 		{
 			PlayerInteract localPlayer = CustomNetworkManager.LocalPlayer;
 			localPlayer.CmdCharacterName(characterNameInput.text);
+		}
+		
+		/// <summary>
+		/// Setting variable
+		/// </summary>
+		/// <param name="_coopMode"></param>
+		public void BoolCheck(bool _coopMode)
+		{
+			coopMode = _coopMode;
+			//CustomNetworkManager.instance.coopMode = _coopMode;
+			MatchManager.instance.coopMode = _coopMode;
+		}
+
+		public void Start()
+		{
+			// if (toggleCoop != null)
+			// {
+			// 	toggleCoop.onValueChanged.AddListener(BoolCheck);
+			// }
 		}
 	}
 }

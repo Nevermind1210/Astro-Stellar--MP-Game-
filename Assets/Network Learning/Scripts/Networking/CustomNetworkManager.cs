@@ -92,22 +92,22 @@ namespace Network_Learning.Scripts.Networking
 
       
       
-      /// <summary>
-      /// Setting variable
-      /// </summary>
-      /// <param name="_coopMode"></param>
-      public void BoolCheck(bool _coopMode)
-      {
-         coopMode = _coopMode;
-      }
-
-      public override void Start()
-      {
-         if (toggleCoop != null)
-         {
-            toggleCoop.onValueChanged.AddListener(BoolCheck);
-         }
-      }
+      // /// <summary>
+      // /// Setting variable
+      // /// </summary>
+      // /// <param name="_coopMode"></param>
+      // public void BoolCheck(bool _coopMode)
+      // {
+      //    coopMode = _coopMode;
+      // }
+      //
+      // public override void Start()
+      // {
+      //    if (toggleCoop != null)
+      //    {
+      //       toggleCoop.onValueChanged.AddListener(BoolCheck);
+      //    }
+      // }
 
       /// <summary>
       /// This is invoked when a host is started.

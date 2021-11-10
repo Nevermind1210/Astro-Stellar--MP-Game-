@@ -1,3 +1,5 @@
+using A1;
+
 using Mirror;
 
 using System;
@@ -11,10 +13,13 @@ namespace NetworkGame.Networking
     public class MatchManager : NetworkBehaviour
     {
         public static MatchManager instance = null;
+
+        public ItemManager itemManager;
     
         [SyncVar(hook  = nameof(OnRecievedMatchStarted))] public bool matchStarted = false;
 
         // Any match settings you want here
+        [SyncVar] public bool coopMode;
 
         [SyncVar] public bool doubleSpeed = false;
         
@@ -24,6 +29,8 @@ namespace NetworkGame.Networking
             {
                 CmdStartMatch();
             }
+
+            itemManager.coOpMode = coopMode;
         }
 
         [Command(requiresAuthority = false)]
@@ -53,7 +60,8 @@ namespace NetworkGame.Networking
                 Destroy(gameObject);
                 return;
             }
-        
+
+            itemManager = FindObjectOfType<ItemManager>();
             // Anything else you want to do in awake
         }
     }
