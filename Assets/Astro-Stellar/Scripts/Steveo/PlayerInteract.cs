@@ -38,7 +38,7 @@ namespace A1.Player
 	    
         public override void OnStartClient()
         {
-	        // This disables the player motor until the start button is hit in the lobby.
+	        // This disables the player motor until the match has started.
 	        PlayerMotor motor = gameObject.GetComponent<PlayerMotor>();
 	        if(isLocalPlayer)
 	        {
