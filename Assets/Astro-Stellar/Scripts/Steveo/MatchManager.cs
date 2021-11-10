@@ -30,7 +30,7 @@ namespace NetworkGame.Networking
                 CmdStartMatch();
             }
 
-            coopMode = true;
+            //coopMode = true;
             itemManager.coOpMode = coopMode;
         }
 

@@ -40,6 +40,7 @@ namespace Networking.Scripts
 			startButton.interactable = CustomNetworkManager.instance.isHost;
 			playerScores = FindObjectOfType<PlayerScores>();
 			coopMode = true;
+			MatchManager.instance.coopMode = coopMode;
 
 			if (toggleCoop != null)
 			{
