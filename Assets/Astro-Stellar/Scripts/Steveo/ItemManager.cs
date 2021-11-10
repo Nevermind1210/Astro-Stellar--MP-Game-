@@ -152,12 +152,7 @@ namespace A1
         public void HidePopup() => popupText.gameObject.SetActive(false);
 
         
-        // Start is called before the first frame update
-        void Start()
-        {
-            //coOpMode = CustomNetworkManager.instance.coopMode;
-        }
-
+        
         public override void OnStartServer()
         {
             //coOpMode = CustomNetworkManager.instance.coopMode;
@@ -175,7 +170,6 @@ namespace A1
         void Update()
         {
             RpcCoopScore();
-            //totalScoreText.gameObject.SetActive(CustomNetworkManager.instance.coopMode);
             organicsText.text = organicItems.Count.ToString();
             totalScoreText.text = $"Total Group Score: {totalScore.ToString()}";
 

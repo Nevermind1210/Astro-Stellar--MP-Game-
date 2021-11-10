@@ -30,22 +30,15 @@ namespace A1.Player
 	    [SerializeField] public Transform itemLocation;
 	    [Header("Player Score")]
 	    [SyncVar] public int personalScore;
-	    //todo make this a syncvar
+	   
 
 	    public TMP_Text personalScoreText;
 	    public PlayerScores scores;
 	    
-        /* 
-         *  update HUD
-         * WIN
-         * LOOSE ??
-         */
-
-
-
-
+	    
         public override void OnStartClient()
         {
+	        // This disables the player motor until the start button is hit in the lobby.
 	        PlayerMotor motor = gameObject.GetComponent<PlayerMotor>();
 	        if(isLocalPlayer)
 	        {
@@ -57,10 +50,11 @@ namespace A1.Player
 	        
 	        scores = FindObjectOfType<PlayerScores>();
 	        scores.AddPlayer(this);
-			//scores.GetActivePlayers();
-			
         }
 
+        /// <summary>
+        /// Enables the player motor if the match has started. Called in Update.
+        /// </summary>
         public void EnableMotor()
         {
 	        PlayerMotor motor = gameObject.GetComponent<PlayerMotor>();
@@ -80,6 +74,7 @@ namespace A1.Player
 	        MatchManager.instance.netIdentity.AssignClientAuthority(connectionToClient);
         }
 
+        // CALLS FOR SETTING THE PLAYER NAME
         [Command]
         public void CmdCharacterName(string _name) => RpcCharacterName(_name);
 
@@ -94,17 +89,7 @@ namespace A1.Player
 	        gameObject.name = _name;
         }
         
-
-
-        // Start is called before the first frame update
-        void Start()
-        {
-	        // scores = FindObjectOfType<PlayerScores>();
-	        // scores.playerList.Clear();
-	        // scores.AddPlayer(this);
-	        // scores.GetActivePlayers();
-        }
-
+       
         
         // Update is called once per frame
         void Update()

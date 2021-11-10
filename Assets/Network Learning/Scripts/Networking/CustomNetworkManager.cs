@@ -91,7 +91,7 @@ namespace Network_Learning.Scripts.Networking
       public Dictionary<uint, NetworkPlayer> _newPlayers = new Dictionary<uint, NetworkPlayer>();
 
       
-      
+      // THIS WAS WHERE THE OLD COOP BOOL WAS SET AND USED BEFORE IT WAS MOVED TO THE LOBBY.
       // /// <summary>
       // /// Setting variable
       // /// </summary>
