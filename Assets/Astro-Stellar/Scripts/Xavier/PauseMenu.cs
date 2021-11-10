@@ -33,6 +33,7 @@ public class PauseMenu : NetworkBehaviour
         // Theres a problem with doing it like this I know there are some solution to this, but the only way to close is by clicking resume
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            isPaused = true;
             if (!isPaused)
             {
                 Resume();
