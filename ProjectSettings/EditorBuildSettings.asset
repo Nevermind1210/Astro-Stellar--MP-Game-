@@ -5,13 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Astro-Stellar/Scenes/Offline A1S.unity
-    guid: 5e5ff5ca1a471b543ba573d93bc610c0
   - enabled: 1
-    path: Assets/Astro-Stellar/Scenes/MainMenu.unity
-    guid: eaf2fe70f2e2a1a4badc397612716621
+    path: Assets/Network Learning/Scenes/Offline.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Astro-Stellar/Scenes/Online A1S.unity
-    guid: 95e79da8abfc7b344952588f02f65209
+    path: Assets/Network Learning/Scenes/Online.unity
+    guid: 1022ee9308112004989eb1de40a429ce
   m_configObjects: {}
