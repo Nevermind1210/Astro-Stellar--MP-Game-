@@ -22,19 +22,19 @@ namespace Network_Learning.Scripts.Networking
       /// </summary>
       /// <param name="_id"> The NetID of the player that we are trying to find. </param>
       /// <returns></returns>
-      public static NetworkPlayer FindPlayer(uint _id)
+      public static PlayerInteract FindPlayer(uint _id)
       {
-         instance._players.TryGetValue(_id, out NetworkPlayer player);
+         instance._players.TryGetValue(_id, out PlayerInteract player);
          return player;
       }
 
       /// <summary> Adds a player to the dictionary </summary>
-      public static void AddPlayer([NotNull] NetworkPlayer _player) => instance._players.Add(_player.netId, _player);
+      public static void AddPlayer([NotNull] PlayerInteract _player) => instance._players.Add(_player.netId, _player);
       
       /// <summary> Removes a player from the dictionary. </summary>
-      public static void RemovePlayer([NotNull] NetworkPlayer _player) => instance._players.Remove(_player.netId);
+      public static void RemovePlayer([NotNull] PlayerInteract _player) => instance._players.Remove(_player.netId);
 
-      public static NetworkPlayer LocalPlayer
+      public static PlayerInteract LocalPlayer
       {
          get
          {
@@ -42,7 +42,7 @@ namespace Network_Learning.Scripts.Networking
             if (localPlayer == null)
             {
                // Loop through each player in the game and check if it is a local player
-               foreach (NetworkPlayer networkPlayer in instance._players.Values)
+               foreach (PlayerInteract networkPlayer in instance._players.Values)
                {
                   if (networkPlayer.isLocalPlayer)
                   {
@@ -58,7 +58,7 @@ namespace Network_Learning.Scripts.Networking
          }
       }
       
-      private static NetworkPlayer localPlayer = null;
+      private static PlayerInteract localPlayer = null;
       
       /// <summary> Whether or not this NetworkManager is the host. /// </summary>
       public bool isHost { get; private set; } = false;
@@ -66,7 +66,7 @@ namespace Network_Learning.Scripts.Networking
       /// <summary>
       /// the dictionary of all connected players using their NetID as the key.
       /// </summary>
-      public Dictionary<uint, NetworkPlayer> _players = new Dictionary<uint, NetworkPlayer>();
+      public Dictionary<uint, PlayerInteract> _players = new Dictionary<uint, PlayerInteract>();
 
       public CustomNetworkDiscovery discovery;
 

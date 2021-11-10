@@ -63,8 +63,6 @@ MonoBehaviour:
   playerSpawnMethod: 1
   spawnPrefabs:
   - {fileID: 1159840691137580869, guid: c31520825f3ec124d822b59e93e113f8, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
   discovery: {fileID: 3262019300228553453}
   coopMode: 1
   toggleCoop: {fileID: 0}

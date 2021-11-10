@@ -4,6 +4,8 @@ using Mirror;
 
 using Network_Learning.Scripts.Networking;
 
+using NetworkGame.Networking;
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,6 +13,7 @@ using System.Collections.Generic;
 using TMPro;
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace A1.Player
 {
@@ -47,12 +50,25 @@ namespace A1.Player
 	        motor.enabled = isLocalPlayer;
 
 	        playerCamera = FindObjectOfType<Camera>();
-	        CustomNetworkManager.AddPlayerNew(this);
+	        CustomNetworkManager.AddPlayer(this);
 	        
 	        scores = FindObjectOfType<PlayerScores>();
 	        scores.AddPlayer(this);
 			//scores.GetActivePlayers();
 			
+        }
+        
+        public override void OnStartLocalPlayer()
+        {
+	        SceneManager.LoadSceneAsync("Lobby", LoadSceneMode.Additive);
+	        
+	        CmdAssignAuthority();
+        }
+        
+        [Command]
+        public void CmdAssignAuthority()
+        {
+	        MatchManager.instance.netIdentity.AssignClientAuthority(connectionToClient);
         }
 
         
