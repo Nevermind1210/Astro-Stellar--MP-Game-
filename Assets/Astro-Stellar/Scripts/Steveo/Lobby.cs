@@ -43,11 +43,10 @@ namespace Networking.Scripts
 		{
 			
 			PlayerInteract localPlayer = CustomNetworkManager.LocalPlayer;
-			localPlayer.EnableMotor();
+			//localPlayer.EnableMotor();
 			// Start timer
 			
 			playerScores.GetActivePlayers();
-			// enables player motor if localplayer.
 			
 			MatchManager.instance.StartMatch();
 			

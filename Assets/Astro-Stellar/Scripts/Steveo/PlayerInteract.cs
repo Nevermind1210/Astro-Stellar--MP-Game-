@@ -119,6 +119,11 @@ namespace A1.Player
 	        {
 		        personalScoreText.text = personalScore.ToString();
 	        }
+
+	        if(MatchManager.instance.matchStarted)
+	        {
+		        EnableMotor();
+	        }
         }
     }
 }
