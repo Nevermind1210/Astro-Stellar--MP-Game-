@@ -47,7 +47,10 @@ namespace A1.Player
         public override void OnStartClient()
         {
 	        PlayerMotor motor = gameObject.GetComponent<PlayerMotor>();
-	        motor.enabled = isLocalPlayer;
+	        if(isLocalPlayer)
+	        {
+		        motor.enabled = false;
+	        }
 
 	        playerCamera = FindObjectOfType<Camera>();
 	        CustomNetworkManager.AddPlayer(this);
@@ -56,6 +59,12 @@ namespace A1.Player
 	        scores.AddPlayer(this);
 			//scores.GetActivePlayers();
 			
+        }
+
+        public void EnableMotor()
+        {
+	        PlayerMotor motor = gameObject.GetComponent<PlayerMotor>();
+	        motor.enabled = isLocalPlayer;
         }
         
         public override void OnStartLocalPlayer()
@@ -71,7 +80,19 @@ namespace A1.Player
 	        MatchManager.instance.netIdentity.AssignClientAuthority(connectionToClient);
         }
 
-        
+        [Command]
+        public void CmdCharacterName(string _name) => RpcCharacterName(_name);
+
+        [ClientRpc]
+        public void RpcCharacterName(string _name)
+        {
+	        CharacterName(_name);
+        }
+
+        public void CharacterName(string _name)
+        {
+	        gameObject.name = _name;
+        }
         
 
 

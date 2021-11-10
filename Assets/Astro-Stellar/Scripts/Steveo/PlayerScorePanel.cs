@@ -25,6 +25,7 @@ public class PlayerScorePanel : NetworkBehaviour
 		
 		//transform.parent = FindObjectOfType<PlayerScores>().transform;
 		transform.SetParent(FindObjectOfType<PlayerScores>().transform);
+		transform.localScale =  Vector3.one;
 	}
 
 	private void Update()

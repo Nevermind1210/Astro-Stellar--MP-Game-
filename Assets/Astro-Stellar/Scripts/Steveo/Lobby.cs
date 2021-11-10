@@ -2,6 +2,8 @@
 
 using A1.Player;
 
+using Astro_Stellar;
+
 using Mirror;
 
 using Network_Learning.Scripts.Networking;
@@ -28,19 +30,24 @@ namespace Networking.Scripts
 		// [SerializeField] private List<Sprite> characterSprites = new List<Sprite>();
 		// [SerializeField] private Image characterImage;
 		// [SerializeField] private int index = 0;
+
+		public PlayerScores playerScores;
 		
 		private void Awake()
 		{
 			startButton.interactable = CustomNetworkManager.instance.isHost;
-			
+			playerScores = FindObjectOfType<PlayerScores>();
 		}
 
 		public void OnClickStartMatch()
 		{
 			
 			PlayerInteract localPlayer = CustomNetworkManager.LocalPlayer;
-			// localPlayer.modelIndex = index;
-			// localPlayer.CmdChangeModel(localPlayer.modelIndex);
+			localPlayer.EnableMotor();
+			// Start timer
+			
+			playerScores.GetActivePlayers();
+			// enables player motor if localplayer.
 			
 			MatchManager.instance.StartMatch();
 			
@@ -65,7 +72,7 @@ namespace Networking.Scripts
 		public void CharacterName()
 		{
 			PlayerInteract localPlayer = CustomNetworkManager.LocalPlayer;
-			localPlayer.name = characterNameInput.text;
+			localPlayer.CmdCharacterName(characterNameInput.text);
 		}
 	}
 }
