@@ -32,14 +32,15 @@ namespace Networking.Scripts
 		// [SerializeField] private int index = 0;
 
 		public PlayerScores playerScores;
-		public bool coopMode;
+		public bool coopMode = true;
 		public Toggle toggleCoop;
 		
 		private void Awake()
 		{
 			startButton.interactable = CustomNetworkManager.instance.isHost;
 			playerScores = FindObjectOfType<PlayerScores>();
-			
+			coopMode = true;
+
 			if (toggleCoop != null)
 			{
 				toggleCoop.onValueChanged.AddListener(BoolCheck);
@@ -59,6 +60,9 @@ namespace Networking.Scripts
 			MatchManager.instance.StartMatch();
 			
 			gameObject.SetActive(false);
+
+			CountdownToLose count = FindObjectOfType<CountdownToLose>();
+			count.timerRunning = true;
 		}
 
 		/// <summary>
@@ -90,7 +94,7 @@ namespace Networking.Scripts
 		{
 			coopMode = _coopMode;
 			//CustomNetworkManager.instance.coopMode = _coopMode;
-			MatchManager.instance.coopMode = _coopMode;
+			MatchManager.instance.coopMode = coopMode;
 		}
 
 		public void Start()

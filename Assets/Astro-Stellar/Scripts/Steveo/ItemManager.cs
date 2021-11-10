@@ -39,7 +39,7 @@ namespace A1
 
         private bool allPartsFound;
         private bool allOrganicsFound;
-        [SyncVar] public bool coOpMode;
+        [SyncVar] public bool coOpMode = true;
 
 
         [Server]

@@ -19,7 +19,7 @@ namespace NetworkGame.Networking
         [SyncVar(hook  = nameof(OnRecievedMatchStarted))] public bool matchStarted = false;
 
         // Any match settings you want here
-        [SyncVar] public bool coopMode;
+        [SyncVar] public bool coopMode = true;
 
         [SyncVar] public bool doubleSpeed = false;
         
@@ -30,6 +30,7 @@ namespace NetworkGame.Networking
                 CmdStartMatch();
             }
 
+            coopMode = true;
             itemManager.coOpMode = coopMode;
         }
 

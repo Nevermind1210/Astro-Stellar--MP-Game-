@@ -16,17 +16,23 @@ public class CountdownToLose : NetworkBehaviour
    [SyncVar] private float seconds;
    public TextMeshProUGUI timer;
   
-   private static bool timerRunning = false;
+   [SyncVar]public bool timerRunning = false;
+   
    
    private void Start()
    {
       _itemManager = FindObjectOfType<ItemManager>();
-      timerRunning = true;
+      timerRunning = false;
    }
    
    private void Update()
    {
-      TimeOnEveryone();
+      if(timerRunning)
+      {
+         TimeOnEveryone();
+         
+      }
+
    }
    
    void TimeOnEveryone()
