@@ -120,6 +120,8 @@ namespace Network_Learning.Scripts.Networking
             
             PlayerController controller = gameObject.GetComponent<PlayerController>();
             controller.enabled = isLocalPlayer;
+            
+            CustomNetworkManager.AddPlayer(this);
         }
 
         // This runs when the server starts... ON the server
