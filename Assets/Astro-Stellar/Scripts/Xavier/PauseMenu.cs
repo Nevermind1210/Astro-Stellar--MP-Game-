@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using A1.Player;
 using Mirror;
 using Network_Learning.Scripts.Networking;
 using UnityEngine;
@@ -16,7 +17,7 @@ public class PauseMenu : NetworkBehaviour
     [SerializeField] private TextMeshProUGUI leaveButton;
 
     #region Properties/Whatever
-    private NetworkPlayer clientPlayer;
+    private PlayerInteract clientPlayer;
     public static bool isPaused = false;
     #endregion
     
