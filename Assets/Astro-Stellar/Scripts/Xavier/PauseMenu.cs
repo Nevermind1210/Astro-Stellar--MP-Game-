@@ -7,6 +7,7 @@ using UnityEngine;
 using static Network_Learning.Scripts.Networking.CustomNetworkManager;
 using NetworkPlayer = Network_Learning.Scripts.Networking.NetworkPlayer;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : NetworkBehaviour
 {
@@ -61,5 +62,10 @@ public class PauseMenu : NetworkBehaviour
     public void DisconnectClientPlayer()
     {
         RemovePlayer(clientPlayer);
+    }
+
+    public void LeaveGame()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
