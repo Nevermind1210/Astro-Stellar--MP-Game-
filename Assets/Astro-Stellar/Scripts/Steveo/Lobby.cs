@@ -41,9 +41,9 @@ namespace Networking.Scripts
 
 		public void OnClickStartMatch()
 		{
+			// Don't need local player anymore here.
+			//PlayerInteract localPlayer = CustomNetworkManager.LocalPlayer;
 			
-			PlayerInteract localPlayer = CustomNetworkManager.LocalPlayer;
-			//localPlayer.EnableMotor();
 			// Start timer
 			
 			playerScores.GetActivePlayers();
