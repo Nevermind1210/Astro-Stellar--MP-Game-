@@ -23,7 +23,8 @@ public class PlayerScorePanel : NetworkBehaviour
 	{
 		// player = NetworkServer.spawned[playerNetId].GetComponent<PlayerInteract>();
 		
-		transform.parent = FindObjectOfType<PlayerScores>().transform;
+		//transform.parent = FindObjectOfType<PlayerScores>().transform;
+		transform.SetParent(FindObjectOfType<PlayerScores>().transform);
 	}
 
 	private void Update()
@@ -35,6 +36,7 @@ public class PlayerScorePanel : NetworkBehaviour
 		else
 		{
 			playerScore.text = player.personalScore.ToString();
+			playerName.text = player.name;
 		}
 	}
 }

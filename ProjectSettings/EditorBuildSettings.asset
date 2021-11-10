@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Astro-Stellar/Scenes/Online A1S.unity
     guid: 95e79da8abfc7b344952588f02f65209
+  - enabled: 1
+    path: Assets/Astro-Stellar/Scenes/Lobby.unity
+    guid: 8916d76df4f8f574c80f933fd9430b00
   m_configObjects: {}
