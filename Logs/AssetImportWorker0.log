@@ -216,3 +216,371 @@ Received Import Request.
 Start importing Assets/Models/Danielle's/Prefabs/Cliff.prefab using Guid(bd1021f006106d049af451f68fea89da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1eee63039788dce887386477c3a18b') in 0.013420 seconds
   Import took 0.018459 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 4483.393291 seconds.
+  path: Assets/Models/Danielle's/Plant_1
+  artifactKey: Guid(47dc66077ed320d40b643398532c52c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1 using Guid(47dc66077ed320d40b643398532c52c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d7ecc676c0e31ecadc7d95e544fc19') in 0.009173 seconds
+  Import took 0.083003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.385559 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures
+  artifactKey: Guid(2cf5747d36fb4394abb1a89927364d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures using Guid(2cf5747d36fb4394abb1a89927364d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '154c7f9ea05702f92bdcd43d7ace33b6') in 0.002268 seconds
+  Import took 0.007271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.601426 seconds.
+  path: Assets/Models/Danielle's/Materials/Cliff.mat
+  artifactKey: Guid(f4f640a9e7c62324dbc777a835be2583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Materials/Cliff.mat using Guid(f4f640a9e7c62324dbc777a835be2583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85ff656a62465e9396622e906a8c119') in 0.056118 seconds
+  Import took 0.101092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Models/Danielle's/Materials/Rock_1.mat
+  artifactKey: Guid(8547940a62c65f1419da347c41f708be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Materials/Rock_1.mat using Guid(8547940a62c65f1419da347c41f708be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10d0582cf1da85a53737dd6868330bc6') in 0.023445 seconds
+  Import took 0.028216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Models/Danielle's/Materials/Rock_2.mat
+  artifactKey: Guid(f890cd42cc63560468e5c69c56ae6a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Materials/Rock_2.mat using Guid(f890cd42cc63560468e5c69c56ae6a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '373dcb43a37fb56ef896febffa1270c8') in 0.022538 seconds
+  Import took 0.027218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Models/Danielle's/Materials/Rock_3.mat
+  artifactKey: Guid(4de7e9fe9796c584680e9ccb68028d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Materials/Rock_3.mat using Guid(4de7e9fe9796c584680e9ccb68028d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b693da3dbbf891f2405e842db8d6d02f') in 0.022439 seconds
+  Import took 0.026333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.482349 seconds.
+  path: Assets/Models/Danielle's/Plant_2
+  artifactKey: Guid(3d1f64eba80052b4a86afb096d3c06cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_2 using Guid(3d1f64eba80052b4a86afb096d3c06cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29ef58461e295c8f089175bce5ea204') in 0.007597 seconds
+  Import took 0.044983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.987073 seconds.
+  path: Assets/Models/Danielle's/Plant_2/Texture
+  artifactKey: Guid(1d6dc5169a25e5e4a8b14969270e956d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_2/Texture using Guid(1d6dc5169a25e5e4a8b14969270e956d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641f583e32bc903145cc2b30bbd9bfef') in 0.007752 seconds
+  Import took 0.017874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.542994 seconds.
+  path: Assets/Models/Danielle's/Plant_2/Textures
+  artifactKey: Guid(1d6dc5169a25e5e4a8b14969270e956d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_2/Textures using Guid(1d6dc5169a25e5e4a8b14969270e956d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b502ea4dfbe6c5a35760d0fd321153') in 0.002575 seconds
+  Import took 0.007770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.103726 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Plant_1.fbx
+  artifactKey: Guid(a2cfe7a98194b50429d83ce7e1242772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Plant_1.fbx using Guid(a2cfe7a98194b50429d83ce7e1242772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836c633203f1bf761987d03a1d0c796a') in 0.099725 seconds
+  Import took 0.132650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.562111 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/blinn1_Base_color.png
+  artifactKey: Guid(ca56ce311d82de745a1917b6eede322b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/blinn1_Base_color.png using Guid(ca56ce311d82de745a1917b6eede322b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25d76f275b9e8ce6f336fd5159f8a40') in 0.012983 seconds
+  Import took 0.022858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/blinn1_Normal_OpenGL.png
+  artifactKey: Guid(f2c9c3853455f82428bf08f800048b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/blinn1_Normal_OpenGL.png using Guid(f2c9c3853455f82428bf08f800048b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4444ca6d18acaa87e4802b3898a19d3e') in 0.010502 seconds
+  Import took 0.013750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds_Base_color.png
+  artifactKey: Guid(3382c49924e18f9498523feb2e827ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds_Base_color.png using Guid(3382c49924e18f9498523feb2e827ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4be539884863fa91dcfebf85bad552') in 0.010672 seconds
+  Import took 0.013860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs_Mixed_AO.png
+  artifactKey: Guid(fd008a46091cd2f4a85f433758bfd2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs_Mixed_AO.png using Guid(fd008a46091cd2f4a85f433758bfd2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d01947ac2f60964403946da283db253') in 0.011603 seconds
+  Import took 0.015063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds_Normal_OpenGL.png
+  artifactKey: Guid(7ef3bf46336b7be439e22d105ab98241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds_Normal_OpenGL.png using Guid(7ef3bf46336b7be439e22d105ab98241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46330f9223339f766d54791a2b03afbe') in 0.012356 seconds
+  Import took 0.015759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds_Roughness.png
+  artifactKey: Guid(dd414d81a76f3474aaf35c7e72ffa47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds_Roughness.png using Guid(dd414d81a76f3474aaf35c7e72ffa47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf43c6ad0d677865efa436d4d0f218a9') in 0.012639 seconds
+  Import took 0.017259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs_Base_color.png
+  artifactKey: Guid(60d19b927ca963e479a30a8174ea621d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs_Base_color.png using Guid(60d19b927ca963e479a30a8174ea621d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5023529fcade212090adf465f1199453') in 0.012530 seconds
+  Import took 0.016834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/blinn1_Mixed_AO.png
+  artifactKey: Guid(697637cfe8eed1142bba227522fc9a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/blinn1_Mixed_AO.png using Guid(697637cfe8eed1142bba227522fc9a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85fbda763c7ef581e64a999924c96a26') in 0.012443 seconds
+  Import took 0.016985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds_Metallic.png
+  artifactKey: Guid(4062de14a98dcbc4798643f249b109d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds_Metallic.png using Guid(4062de14a98dcbc4798643f249b109d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03cd7cccb7ac64fa5b7134c96166c1e7') in 0.011361 seconds
+  Import took 0.015629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs_Metallic.png
+  artifactKey: Guid(55a5faf42c73f494fa5e0d6192fe6176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs_Metallic.png using Guid(55a5faf42c73f494fa5e0d6192fe6176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5067bbcd31daba8f73a8195375cdc849') in 0.010965 seconds
+  Import took 0.014923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/blinn1_Metallic.png
+  artifactKey: Guid(9e706e6bbb0a6d24f986d4cb31110de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/blinn1_Metallic.png using Guid(9e706e6bbb0a6d24f986d4cb31110de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20db6b3543c99ab80a501386d9646c5f') in 0.011346 seconds
+  Import took 0.015843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/blinn1_Normal.png
+  artifactKey: Guid(da9d2fb73be2c1944bf4c584e877953e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/blinn1_Normal.png using Guid(da9d2fb73be2c1944bf4c584e877953e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b692a3abc949230183b18b61589d7be7') in 0.013073 seconds
+  Import took 0.017397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/blinn1_Roughness.png
+  artifactKey: Guid(0ea9fc02ff8b0aa4ba518ce1ed8a4308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/blinn1_Roughness.png using Guid(0ea9fc02ff8b0aa4ba518ce1ed8a4308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aae758a8aa2f1c90a1eec6ddd11bae3a') in 0.012729 seconds
+  Import took 0.016810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds_Height.png
+  artifactKey: Guid(a65c3a3fd5ea8794799a71febeaa0795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds_Height.png using Guid(a65c3a3fd5ea8794799a71febeaa0795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddebae42946caab0318fe43b342dbcd') in 0.011977 seconds
+  Import took 0.015659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds_Mixed_AO.png
+  artifactKey: Guid(01c05a366f72d4d4c97df38eea3f2185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds_Mixed_AO.png using Guid(01c05a366f72d4d4c97df38eea3f2185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a506c7b35560b2489c5b6de4f60495fa') in 0.012728 seconds
+  Import took 0.016851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs_Roughness.png
+  artifactKey: Guid(a17668eba348a9d47bb28498082bedb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs_Roughness.png using Guid(a17668eba348a9d47bb28498082bedb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3130437e1ecc6abb8e6731fb9b54e786') in 0.012975 seconds
+  Import took 0.017213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs_Normal.png
+  artifactKey: Guid(002bec1a5b604e7418f6a53791bd5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs_Normal.png using Guid(002bec1a5b604e7418f6a53791bd5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039f6cdc7e8d744d6d6683ed15b85c4b') in 0.015191 seconds
+  Import took 0.020007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs_Height.png
+  artifactKey: Guid(609af8d1a9783b642adb8c94e921d3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs_Height.png using Guid(609af8d1a9783b642adb8c94e921d3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f469a73c8974cfe9543d32191ccef4b8') in 0.012675 seconds
+  Import took 0.017222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/blinn1_Height.png
+  artifactKey: Guid(0bf99afc36816584284f6a7a1e23b81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/blinn1_Height.png using Guid(0bf99afc36816584284f6a7a1e23b81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ba7cbe1e994aa329474f2db4b3b31c') in 0.012229 seconds
+  Import took 0.016682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs_Normal_OpenGL.png
+  artifactKey: Guid(a3e26ace86257b1448455e2293a71c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs_Normal_OpenGL.png using Guid(a3e26ace86257b1448455e2293a71c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13d49f858eb2da8458cd78fe22bd1ccb') in 0.014208 seconds
+  Import took 0.018098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds_Normal.png
+  artifactKey: Guid(fc80708d316f73b459374d8b8bd61ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds_Normal.png using Guid(fc80708d316f73b459374d8b8bd61ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b96499186b0e852ae7cb89d51630c0') in 0.011582 seconds
+  Import took 0.015541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.403628 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Base
+  artifactKey: Guid(852b6173d5c3b6c4eb7bdb2fcae5224b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Base using Guid(852b6173d5c3b6c4eb7bdb2fcae5224b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3691b9968b23c5d8277101822b2eff3') in 0.007131 seconds
+  Import took 0.011704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.369851 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs
+  artifactKey: Guid(fc7cbac6e9a5e4c4ea6895fdf2a07899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs using Guid(fc7cbac6e9a5e4c4ea6895fdf2a07899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d75a17b252a010fa6659c919281484') in 0.008677 seconds
+  Import took 0.013307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.040769 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds
+  artifactKey: Guid(543644cd9b8bd4f4e91e8076b18fb1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds using Guid(543644cd9b8bd4f4e91e8076b18fb1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28463d39e9035c38991e36275a6c4488') in 0.007444 seconds
+  Import took 0.011355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.043899 seconds.
+  path: Assets/Models/Danielle's/Materials/Plant_1-Base.mat
+  artifactKey: Guid(291d4676474c4724b8023402270b8a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Materials/Plant_1-Base.mat using Guid(291d4676474c4724b8023402270b8a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38aba13c2ecdc1af8b64c73898e6904b') in 0.015538 seconds
+  Import took 0.020897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.682224 seconds.
+  path: Assets/Models/Danielle's/Materials/Plant_1-Buds.mat
+  artifactKey: Guid(41067ecdc015cb84db20fdb96e11a044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Materials/Plant_1-Buds.mat using Guid(41067ecdc015cb84db20fdb96e11a044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e03cbab9453e88329db567722d3c1411') in 0.013031 seconds
+  Import took 0.017694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.956365 seconds.
+  path: Assets/Models/Danielle's/Materials/Plant_1-Leafs.mat
+  artifactKey: Guid(10f86ab0dea66d9489cf2adec8c6f915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Materials/Plant_1-Leafs.mat using Guid(10f86ab0dea66d9489cf2adec8c6f915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '109a68ff63a2da681c70d5650e7d7279') in 0.057538 seconds
+  Import took 0.061279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.168722 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Base/blinn1_Normal.png
+  artifactKey: Guid(da9d2fb73be2c1944bf4c584e877953e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Base/blinn1_Normal.png using Guid(da9d2fb73be2c1944bf4c584e877953e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c5fcca476d0b37a3fa7019ee60013e') in 0.014977 seconds
+  Import took 0.080663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.133451 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Base/blinn1_Normal_OpenGL.png
+  artifactKey: Guid(f2c9c3853455f82428bf08f800048b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Base/blinn1_Normal_OpenGL.png using Guid(f2c9c3853455f82428bf08f800048b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1df94c32b81a43b32e421602f8548d8') in 0.016983 seconds
+  Import took 0.023073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 157.906752 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Plant_1.fbx
+  artifactKey: Guid(a2cfe7a98194b50429d83ce7e1242772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Plant_1.fbx using Guid(a2cfe7a98194b50429d83ce7e1242772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce77747b62354171d64522e6b7c1d502') in 0.075806 seconds
+  Import took 0.079882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 120.248276 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds/Buds_Normal.png
+  artifactKey: Guid(fc80708d316f73b459374d8b8bd61ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds/Buds_Normal.png using Guid(fc80708d316f73b459374d8b8bd61ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123343d3562e07717845d6e56daff668') in 0.012431 seconds
+  Import took 0.017056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.000251 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Buds/Buds_Normal_OpenGL.png
+  artifactKey: Guid(7ef3bf46336b7be439e22d105ab98241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Buds/Buds_Normal_OpenGL.png using Guid(7ef3bf46336b7be439e22d105ab98241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5b55647f0a31367103894b8e7fa471') in 0.015242 seconds
+  Import took 0.019559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.388724 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs/Leafs_Normal_OpenGL.png
+  artifactKey: Guid(a3e26ace86257b1448455e2293a71c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs/Leafs_Normal_OpenGL.png using Guid(a3e26ace86257b1448455e2293a71c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01ad041b695d7ac82e244b555aee7bb') in 0.014084 seconds
+  Import took 0.019238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.062948 seconds.
+  path: Assets/Models/Danielle's/Plant_1/Textures/Leafs/Leafs_Normal.png
+  artifactKey: Guid(002bec1a5b604e7418f6a53791bd5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Plant_1/Textures/Leafs/Leafs_Normal.png using Guid(002bec1a5b604e7418f6a53791bd5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae047c6efea35742be90d7996e8a04fd') in 0.014974 seconds
+  Import took 0.019828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.751843 seconds.
+  path: Assets/Models/Danielle's/Prefabs/Plant_1.prefab
+  artifactKey: Guid(d4515484186731f4c8f5ed8f93ffd0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Prefabs/Plant_1.prefab using Guid(d4515484186731f4c8f5ed8f93ffd0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e45571a087a8f0ad25e4264fda947a') in 0.016716 seconds
+  Import took 0.022036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Models/Danielle's/Prefabs/Plant_1.prefab
+  artifactKey: Guid(d4515484186731f4c8f5ed8f93ffd0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Danielle's/Prefabs/Plant_1.prefab using Guid(d4515484186731f4c8f5ed8f93ffd0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e45571a087a8f0ad25e4264fda947a') in 0.010530 seconds
+  Import took 0.014197 seconds .
+
