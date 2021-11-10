@@ -181,6 +181,9 @@ MonoBehaviour:
   itemHolding: {fileID: 0}
   itemLocation: {fileID: 2002047550647908309}
   personalScore: 0
+  model: {fileID: 6958245900479969192}
+  personalScoreText: {fileID: 0}
+  scores: {fileID: 0}
 --- !u!114 &1731764962
 MonoBehaviour:
   m_ObjectHideFlags: 0

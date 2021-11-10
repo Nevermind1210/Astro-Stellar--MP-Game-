@@ -111,6 +111,7 @@ namespace A1.Player
         {
 	        if(isLocalPlayer)
 	        {
+		        
 		        playerCamera.transform.position = transform.position + camOffset;
 		        playerCamera.transform.LookAt(transform.position);
 	        }
