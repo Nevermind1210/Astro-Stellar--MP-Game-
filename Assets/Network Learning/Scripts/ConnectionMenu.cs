@@ -1,54 +1,88 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using kcp2k;
 using Mirror;
+using Network_Learning.Scripts.Networking;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
 
 namespace Network_Learning.Scripts
 {
     public class ConnectionMenu : MonoBehaviour
     {
-        private NetworkManager _networkManager;
+        private CustomNetworkManager networkManager;
+        private KcpTransport transport;
 
         [SerializeField] private Button hostButton;
         [SerializeField] private TMP_InputField _inputField;
         [SerializeField] private Button connectButton;
+
+        [Space] [SerializeField] private DiscoveredGame discoveredGameTemplate;
+
+        private Dictionary<IPAddress, DiscoveredGame> discoveredGame = new Dictionary<IPAddress, DiscoveredGame>();
+
         private void Awake()
         {
-            _networkManager = NetworkManager.singleton;
-            
             hostButton.onClick.AddListener(OnClickHost);
             _inputField.onEndEdit.AddListener(OnEndEditAddress);
             connectButton.onClick.AddListener(OnClickConnect);
         }
 
-        private void OnClickHost() => _networkManager.StartHost();
-        private void OnEndEditAddress(string _value) => _networkManager.networkAddress = _value;
+        private void Start()
+        {
+            networkManager = CustomNetworkManager.instance;
+            transport = networkManager.GetComponent<KcpTransport>();
+            
+            CustomNetworkDiscovery discovery = networkManager.discovery;
+            discovery.onServerFound.AddListener(OnFoundServer);
+            discovery.StartDiscovery();
+        }
+
+
+        private void OnClickHost() => networkManager.StartHost();
+        private void OnEndEditAddress(string _value) => networkManager.networkAddress = _value;
 
         private void OnClickConnect()
         {
-            string address = _inputField.text;
-            ushort port = 5555;
-            if (address.Contains(":"))
+            string address = _inputField.text.Trim((char)8203);
+            ushort port = 7777;
+            //if the address contains a colon, it has a port
+            if(address.Contains(":"))
             {
+                //get everything after the colon
                 string portID = address.Substring(address.IndexOf(":", StringComparison.Ordinal) + 1);
+                //turn it into a port
                 port = ushort.Parse(portID);
+                //remove the port from the address
                 address = address.Substring(0, address.IndexOf(":", StringComparison.Ordinal));
             }
-            
-            
-            if (!IPAddress.TryParse(address, out IPAddress ipAddress))
+			
+            if(!IPAddress.TryParse(address, out IPAddress ipAddress))
             {
                 Debug.LogError($"Invalid IP: {address}");
                 address = "localhost";
             }
-            
-            ((KcpTransport)Transport.activeTransport).Port = port;
-            _networkManager.networkAddress = address;
-            _networkManager.StartClient();
+			
+            transport.Port = port;
+            networkManager.networkAddress = address;
+            networkManager.StartClient();
+        }
+        
+        private void OnFoundServer(DiscoveryResponse _response)
+        {
+            // Have recieved a server that is broadcasting on the network that we haven't already found
+            if (!discoveredGame.ContainsKey(_response.EndPoint.Address))
+            {
+                // We haven't found this game already, so make the gameObject
+                DiscoveredGame game = Instantiate(discoveredGameTemplate, discoveredGameTemplate.transform.parent);
+                game.gameObject.SetActive(true);
+
+                game.Setup(_response, networkManager, transport);
+                discoveredGame.Add(_response.EndPoint.Address, game);
+            }
         }
     }
 }
