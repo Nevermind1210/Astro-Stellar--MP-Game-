@@ -21,13 +21,20 @@ public class PlayerScorePanel : NetworkBehaviour
 
 	private void Start()
 	{
-		player = NetworkServer.spawned[playerNetId].GetComponent<PlayerInteract>();
+		// player = NetworkServer.spawned[playerNetId].GetComponent<PlayerInteract>();
 		
 		transform.parent = FindObjectOfType<PlayerScores>().transform;
 	}
 
 	private void Update()
 	{
-		playerScore.text = player.personalScore.ToString();
+		if(player == null)
+		{
+			player = NetworkIdentity.spawned[playerNetId].GetComponent<PlayerInteract>();
+		}
+		else
+		{
+			playerScore.text = player.personalScore.ToString();
+		}
 	}
 }
