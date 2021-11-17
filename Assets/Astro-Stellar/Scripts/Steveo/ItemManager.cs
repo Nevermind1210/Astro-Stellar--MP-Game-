@@ -37,7 +37,7 @@ namespace A1
         [SerializeField] private TMP_Text popupText;
         [SerializeField] private TMP_Text totalScoreText;
 
-        private bool allPartsFound;
+        public bool allPartsFound;
         private bool allOrganicsFound;
         [SyncVar] public bool coOpMode = true;
 

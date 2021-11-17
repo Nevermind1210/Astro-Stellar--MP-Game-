@@ -15,13 +15,13 @@ namespace NetworkGame.Networking
         public static MatchManager instance = null;
 
         public ItemManager itemManager;
+        public CountdownToLose countdownToLose;
     
         [SyncVar(hook  = nameof(OnRecievedMatchStarted))] public bool matchStarted = false;
 
         // Any match settings you want here
         [SyncVar] public bool coopMode = true;
 
-        [SyncVar] public bool doubleSpeed = false;
         
         public void StartMatch()
         {
@@ -47,6 +47,27 @@ namespace NetworkGame.Networking
             }
         }
         
+        [Server]
+        public void EndGame()
+        {
+            //if playing coop
+                // if all parts are found and timer hits zero
+                    //displays total score and says win message - item manager has total score.
+                // if parts are not found and timer hits zero
+                    // displays lose message
+                    
+            // if playing not playing coop
+                // if all parts are found and timer hits zero
+                    // display high score and winner.
+                    //  loop through list in player scores checking personal score to find highest.
+                // if all parts are not found and timer hits zero
+                    // no one wins and display message saying ship could not take off.
+                    
+                    
+            // after all this wait for 5-10 s and load main menu??
+                
+        }
+        
         
 
         protected void Awake()
@@ -62,6 +83,7 @@ namespace NetworkGame.Networking
             }
 
             itemManager = FindObjectOfType<ItemManager>();
+            countdownToLose = FindObjectOfType<CountdownToLose>();
             // Anything else you want to do in awake
         }
     }
