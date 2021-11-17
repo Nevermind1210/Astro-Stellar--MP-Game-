@@ -11117,6 +11117,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 861615736}
     m_Modifications:
+    - target: {fileID: 1208708431126264109, guid: fe3a84095faf5b84ba0b7a7d07981e6f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2089331852}
+    - target: {fileID: 1208708431126264109, guid: fe3a84095faf5b84ba0b7a7d07981e6f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SaveSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208708431126264109, guid: fe3a84095faf5b84ba0b7a7d07981e6f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AltarChase.Scripts.Xavier_Scripts.OptionMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208708431563097536, guid: fe3a84095faf5b84ba0b7a7d07981e6f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 103517513}
+    - target: {fileID: 1208708431563097536, guid: fe3a84095faf5b84ba0b7a7d07981e6f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 1208708431791390059, guid: fe3a84095faf5b84ba0b7a7d07981e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11285,6 +11305,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1208708431791390060, guid: fe3a84095faf5b84ba0b7a7d07981e6f, type: 3}
   m_PrefabInstance: {fileID: 2089331849}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2089331852 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7873749774255890326, guid: fe3a84095faf5b84ba0b7a7d07981e6f, type: 3}
+  m_PrefabInstance: {fileID: 2089331849}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089331851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928f9c43162d6d64c85a68828a59571c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2105004135
 PrefabInstance:
   m_ObjectHideFlags: 0
