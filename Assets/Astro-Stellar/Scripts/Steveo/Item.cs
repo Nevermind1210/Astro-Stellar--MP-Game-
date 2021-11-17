@@ -25,6 +25,7 @@ namespace A1
     public class Item : NetworkBehaviour
     {
         [SerializeField] public ItemType itemType;
+        [SerializeField] private AudioSource itemPickupSFX;
 
 
         /// <summary>
@@ -39,6 +40,7 @@ namespace A1
                 PlayerInteract player = _collision.gameObject.GetComponent<PlayerInteract>();
                 if(player.itemHolding == null)
                 {
+                    itemPickupSFX.Play();
                     RpcPickupItem(player);
                     player.itemHolding = this;
                 }
