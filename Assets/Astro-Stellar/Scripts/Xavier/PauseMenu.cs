@@ -66,8 +66,5 @@ public class PauseMenu : NetworkBehaviour
         RemovePlayer(clientPlayer);
     }
 
-    public void LeaveGame()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
+    public void LeaveGame() => SceneManager.LoadScene("MainMenu");
 }
