@@ -41,6 +41,10 @@ namespace A1
         private bool allOrganicsFound;
         [SyncVar] public bool coOpMode = true;
 
+        [Header("Audio SFX")] 
+        [SerializeField] private AudioSource organicItem;
+        [SerializeField] private AudioSource partItem;
+
 
         [Server]
         private void OnCollisionEnter(Collision _collision)
@@ -59,11 +63,13 @@ namespace A1
                                 organicItems.Add(item);
                                 totalScore += organicsValue;
                                 player.personalScore += organicsValue;
+                                organicItem.Play();
                                 break;
                             case ItemType.ShipPart:
                                 partItems.Add(item);
                                 totalScore += partsValue;
                                 player.personalScore += partsValue;
+                                partItem.Play();
                                 RpcDisplayPartsUI();
                                 break;
                             default:
