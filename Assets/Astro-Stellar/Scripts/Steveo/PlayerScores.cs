@@ -29,6 +29,9 @@ namespace Astro_Stellar
 		public List<PlayerScorePanel> panels = new List<PlayerScorePanel>();
 		[SyncVar]private int index = 0;
 
+		private int highScore = 0;
+		public PlayerInteract highestScorePLayer;
+
 		// public override void OnStartServer()
 		// {
 		// 	foreach(GameObject scorePanel in scorePanels)
@@ -79,6 +82,19 @@ namespace Astro_Stellar
 
 		}
 
+		[Server]
+		public void FindHighestScore()
+		{
+			foreach(PlayerInteract player in playerList)
+			{
+				if(player.personalScore > highScore)
+				{
+					highScore = player.personalScore;
+					highestScorePLayer = player;
+				}
+
+			}
+		}
 
 
 		private void Start()
