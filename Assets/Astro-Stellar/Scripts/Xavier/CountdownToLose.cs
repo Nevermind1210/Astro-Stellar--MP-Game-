@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using A1;
 using Mirror;
+
+using NetworkGame.Networking;
+
 using TMPro;
 using UnityEngine;
 
@@ -19,6 +22,7 @@ public class CountdownToLose : NetworkBehaviour
    [SyncVar]public bool timerRunning = false;
    
    
+   
    private void Start()
    {
       _itemManager = FindObjectOfType<ItemManager>();
@@ -30,8 +34,9 @@ public class CountdownToLose : NetworkBehaviour
       if(timerRunning)
       {
          TimeOnEveryone();
-         
       }
+
+      
 
    }
    
@@ -47,11 +52,17 @@ public class CountdownToLose : NetworkBehaviour
          Debug.LogError("Time has ran out!");
          if (timerRunning)
          {
-            _itemManager.RpcPopupText("Time has ran out!");
+            MatchManager.instance.EndGame();
+            //_itemManager.RpcPopupText("Time has ran out!");
             timeRemaining = 0;
             timerRunning = false;
          }
          timer.text = "0:00";
+      }
+
+      if(timeRemaining == 15)
+      {
+         _itemManager.RpcPopupText("15 seconds remaining.");
       }
    }
    

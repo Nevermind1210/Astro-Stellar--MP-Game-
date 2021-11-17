@@ -1,5 +1,7 @@
 using A1;
 
+using Astro_Stellar;
+
 using Mirror;
 
 using System;
@@ -16,6 +18,7 @@ namespace NetworkGame.Networking
 
         public ItemManager itemManager;
         public CountdownToLose countdownToLose;
+        public PlayerScores playerScores;
     
         [SyncVar(hook  = nameof(OnRecievedMatchStarted))] public bool matchStarted = false;
 
@@ -50,6 +53,41 @@ namespace NetworkGame.Networking
         [Server]
         public void EndGame()
         {
+            if(coopMode)
+            {
+                if(itemManager.allPartsFound)
+                {
+                    itemManager.RpcPopupText($"Congratulations! \n You've fixed the ship and escaped the planet. \n Total Score: {itemManager.totalScore}");
+                }
+
+                if(!itemManager.allPartsFound)
+                {
+                    itemManager.RpcPopupText($"Unfortunately the ship was not repaired in time! \n You are now stuck on this planet....forever! \n Total Score: {itemManager.totalScore}");
+                }
+            }
+
+            if(!coopMode)
+            {
+                // run a function on player scores that returns the player with the highest score.
+                playerScores.FindHighestScore();
+
+                if(itemManager.allPartsFound)
+                {
+                    itemManager.RpcPopupText($"Congratulations! \n The ship was repaired! \n Player with the highest score: {playerScores.highestScorePLayer.name} {playerScores.highestScorePLayer.personalScore}");
+
+                }
+                
+                
+                if(!itemManager.allPartsFound)
+                {
+                    itemManager.RpcPopupText($"Unfortunately the ship was not repaired in time! \n You are now stuck on this planet....forever! \n Player with the highest score: {playerScores.highestScorePLayer.name} {playerScores.highestScorePLayer.personalScore}");
+
+                }
+            }
+            
+            Invoke(nameof(RpcBackToMain), 5);
+            
+            
             //if playing coop
                 // if all parts are found and timer hits zero
                     //displays total score and says win message - item manager has total score.
@@ -67,7 +105,8 @@ namespace NetworkGame.Networking
             // after all this wait for 5-10 s and load main menu??
                 
         }
-        
+        [ClientRpc]
+        private void RpcBackToMain() => SceneManager.LoadScene("MainMenu");
         
 
         protected void Awake()
@@ -84,6 +123,7 @@ namespace NetworkGame.Networking
 
             itemManager = FindObjectOfType<ItemManager>();
             countdownToLose = FindObjectOfType<CountdownToLose>();
+            playerScores = FindObjectOfType<PlayerScores>();
             // Anything else you want to do in awake
         }
     }

@@ -28,7 +28,7 @@ namespace A1
         [SerializeField] private int organicsValue = 10;
         [SerializeField] private int partsValue = 20;
         [Header("Total Group Score")]
-        [SyncVar, SerializeField] private int totalScore;
+        [SyncVar, SerializeField] public int totalScore;
 
         [Header("UI Elements")]
         public List<GameObject> partsUI = new List<GameObject>();

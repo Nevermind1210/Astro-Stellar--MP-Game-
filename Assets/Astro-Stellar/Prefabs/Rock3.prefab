@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 4677569776692073904}
   - component: {fileID: 2364740529256262460}
   - component: {fileID: 7053050140352464500}
+  - component: {fileID: 8717017138122515502}
   m_Layer: 0
   m_Name: pasted__Rock_2
   m_TagString: Untagged
@@ -112,6 +113,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8717017138122515502
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277761996979796831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1923010826180173505, guid: da4c25e1b4361ab488532a81c20527d0, type: 3}
 --- !u!1 &5588679580694881573
 GameObject:
   m_ObjectHideFlags: 0
