@@ -149,7 +149,7 @@ namespace A1
         {
             popupText.text = _text;
             popupText.gameObject.SetActive(true);
-            Invoke(nameof(HidePopup),3);
+            Invoke(nameof(HidePopup),4);
         }
 
         /// <summary>

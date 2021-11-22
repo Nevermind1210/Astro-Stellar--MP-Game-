@@ -4,6 +4,8 @@ using Astro_Stellar;
 
 using Mirror;
 
+using Network_Learning.Scripts.Networking;
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -105,9 +107,14 @@ namespace NetworkGame.Networking
             // after all this wait for 5-10 s and load main menu??
                 
         }
+
         [ClientRpc]
-        private void RpcBackToMain() => SceneManager.LoadScene("MainMenu");
-        
+        private void RpcBackToMain()
+        {
+            CustomNetworkManager.instance.StopHost();
+            SceneManager.LoadScene("MainMenu");
+        }
+
 
         protected void Awake()
         {
