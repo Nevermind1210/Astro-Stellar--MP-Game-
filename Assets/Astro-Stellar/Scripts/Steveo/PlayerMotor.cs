@@ -22,7 +22,7 @@ namespace A1.Player
         public Vector3 lastLookDirection;
 
         //todo Add Animator for movement animations.
-        // todo MOBILE INPUT
+        
 
         // Start is called before the first frame update
         void Start()
@@ -47,7 +47,7 @@ namespace A1.Player
             {
                 movementVelocity = 0;
             }
-            //todo Add animation checks into here
+            
         }
 
         
@@ -81,6 +81,8 @@ namespace A1.Player
             // Sets the character facing direction when moving
             if(movementVelocity != 0)
             {
+                // todo Trigger run animation here. Maybe with bool to trigger run and hold.
+                
                 transform.rotation = Quaternion.LookRotation(movementDirection);
                 // Saves the direction to use when stopped.
                 lastLookDirection = movementDirection;
@@ -88,6 +90,7 @@ namespace A1.Player
             // Sets the character facing direction to the last direction it was moving in.
             if(movementVelocity == 0)
             {
+                //todo trigger idle animation here
                 transform.rotation = Quaternion.LookRotation(lastLookDirection);
             }
             

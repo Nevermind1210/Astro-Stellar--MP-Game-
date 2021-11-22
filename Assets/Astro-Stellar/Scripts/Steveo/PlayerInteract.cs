@@ -23,6 +23,7 @@ namespace A1.Player
     public class PlayerInteract : NetworkBehaviour
     {
 	    private Camera playerCamera;
+	    private PlayerMotor motor;
 	    [Header("Camera")]
 	    [SerializeField] private Vector3 camOffset;
 		[Header("Item Variables")]
@@ -39,7 +40,7 @@ namespace A1.Player
         public override void OnStartClient()
         {
 	        // This disables the player motor until the match has started.
-	        PlayerMotor motor = gameObject.GetComponent<PlayerMotor>();
+	        motor = gameObject.GetComponent<PlayerMotor>();
 	        if(isLocalPlayer)
 	        {
 		        motor.enabled = false;
@@ -57,7 +58,7 @@ namespace A1.Player
         /// </summary>
         public void EnableMotor()
         {
-	        PlayerMotor motor = gameObject.GetComponent<PlayerMotor>();
+	        motor = gameObject.GetComponent<PlayerMotor>();
 	        motor.enabled = isLocalPlayer;
         }
         

@@ -56,6 +56,7 @@ namespace A1
         {
             transform.parent = _player.itemLocation.transform;
             transform.position = _player.itemLocation.position;
+            //todo trigger holding bool here for animation
         }
 
         // Start is called before the first frame update
