@@ -16,6 +16,7 @@ namespace A1.Player
         private GameObject cameraGameObject;
 
         private Rigidbody rb;
+        [SerializeField] public Animator animator;
         private float movementVelocity;
         private Vector3 movementDirection;
 
@@ -82,6 +83,7 @@ namespace A1.Player
             if(movementVelocity != 0)
             {
                 // todo Trigger run animation here. Maybe with bool to trigger run and hold.
+                animator.SetBool("isWalking", true);
                 
                 transform.rotation = Quaternion.LookRotation(movementDirection);
                 // Saves the direction to use when stopped.
@@ -91,6 +93,7 @@ namespace A1.Player
             if(movementVelocity == 0)
             {
                 //todo trigger idle animation here
+                animator.SetBool("isWalking",false);
                 transform.rotation = Quaternion.LookRotation(lastLookDirection);
             }
             

@@ -55,6 +55,7 @@ namespace A1
                 PlayerInteract player = _collision.gameObject.GetComponent<PlayerInteract>();
                 if(player.itemHolding != null)
                 {
+                    player.motor.animator.SetTrigger("putDownItem");
                     Item item = player.itemHolding.GetComponent<Item>();
                     // Switch through the different item types and add to respective lists and scores.
                     switch(item.itemType)

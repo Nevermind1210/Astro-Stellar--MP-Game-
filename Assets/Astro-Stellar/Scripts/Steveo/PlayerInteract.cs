@@ -23,7 +23,7 @@ namespace A1.Player
     public class PlayerInteract : NetworkBehaviour
     {
 	    private Camera playerCamera;
-	    private PlayerMotor motor;
+	    public PlayerMotor motor;
 	    [Header("Camera")]
 	    [SerializeField] private Vector3 camOffset;
 		[Header("Item Variables")]

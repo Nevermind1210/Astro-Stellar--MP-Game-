@@ -40,6 +40,7 @@ namespace A1
                 PlayerInteract player = _collision.gameObject.GetComponent<PlayerInteract>();
                 if(player.itemHolding == null)
                 {
+                    player.motor.animator.SetTrigger("pickUpItem");
                     itemPickupSFX.Play();
                     RpcPickupItem(player);
                     player.itemHolding = this;
