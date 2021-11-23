@@ -26,6 +26,7 @@ namespace A1
     {
         [SerializeField] public ItemType itemType;
         [SerializeField] private AudioSource itemPickupSFX;
+        [SerializeField] public Sprite itemImage = null;
 
 
         /// <summary>

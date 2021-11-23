@@ -242,6 +242,7 @@ MonoBehaviour:
   syncInterval: 0.1
   itemType: 1
   itemPickupSFX: {fileID: 8081225143963735423}
+  itemImage: {fileID: 21300000, guid: 6c23433a053e839498264d7360ad2e07, type: 3}
 --- !u!114 &1390779811896595666
 MonoBehaviour:
   m_ObjectHideFlags: 0

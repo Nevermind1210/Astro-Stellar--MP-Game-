@@ -9,6 +9,7 @@ using Network_Learning.Scripts.Networking;
 using TMPro;
 
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace A1
 {
@@ -33,6 +34,7 @@ namespace A1
         [Header("UI Elements")]
         public List<GameObject> partsUI = new List<GameObject>();
         private int index;
+        private Sprite cachedImage = null;
         [SerializeField] private TMP_Text organicsText;
         [SerializeField] private TMP_Text popupText;
         [SerializeField] private TMP_Text totalScoreText;
@@ -68,6 +70,7 @@ namespace A1
                                 break;
                             case ItemType.ShipPart:
                                 partItems.Add(item);
+                                cachedImage = item.itemImage;
                                 totalScore += partsValue;
                                 player.personalScore += partsValue;
                                 partItem.Play();
@@ -117,6 +120,8 @@ namespace A1
         public void RpcDisplayPartsUI()
         {
             partsUI[index].SetActive(true);
+            Image partUiImage = partsUI[index].GetComponent<Image>();
+            partUiImage.sprite = cachedImage;
             index += 1;
         }
 
