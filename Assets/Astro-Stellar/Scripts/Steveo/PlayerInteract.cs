@@ -15,6 +15,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using Random = UnityEngine.Random;
+
 namespace A1.Player
 {
     /// <summary>
@@ -35,6 +37,25 @@ namespace A1.Player
 
 	    public TMP_Text personalScoreText;
 	    public PlayerScores scores;
+
+	    [Header("Player Materials")] 
+	    public List<Material> playerMaterials = new List<Material>();
+	    [SyncVar(hook = nameof(OnSetPlayerMaterial)), SerializeField] private int playerMaterial;
+	    private Material cachedMaterial;
+	    [SerializeField] private SkinnedMeshRenderer playerRend;
+
+	    /// <summary>
+	    /// Hook for setting the player material on the server.
+	    /// </summary>
+	    private void OnSetPlayerMaterial(int _old, int _new)
+	    {
+		    if(cachedMaterial == null)
+		    {
+			    cachedMaterial = playerMaterials[playerMaterial];
+		    }
+
+		    playerRend.material = cachedMaterial;
+	    }
 	    
 	    
         public override void OnStartClient()
@@ -44,6 +65,7 @@ namespace A1.Player
 	        if(isLocalPlayer)
 	        {
 		        motor.enabled = false;
+				CmdGetColor();
 	        }
 
 	        playerCamera = FindObjectOfType<Camera>();
@@ -51,6 +73,7 @@ namespace A1.Player
 	        
 	        scores = FindObjectOfType<PlayerScores>();
 	        scores.AddPlayer(this);
+	        
         }
 
         /// <summary>
@@ -61,6 +84,18 @@ namespace A1.Player
 	        motor = gameObject.GetComponent<PlayerMotor>();
 	        motor.enabled = isLocalPlayer;
         }
+
+        /// <summary>
+        /// Command for setting the player material index.
+        /// </summary>
+        [Command]
+        public void CmdGetColor()
+        {
+	        playerMaterial = Random.Range(0, playerMaterials.Count);
+        }
+        
+
+        
         
         public override void OnStartLocalPlayer()
         {
