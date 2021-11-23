@@ -34,7 +34,7 @@ namespace A1
         [Header("UI Elements")]
         public List<GameObject> partsUI = new List<GameObject>();
         private int index;
-        private Sprite cachedImage = null;
+        [SyncVar] private GameObject cachedItem = null;
         [SerializeField] private TMP_Text organicsText;
         [SerializeField] private TMP_Text popupText;
         [SerializeField] private TMP_Text totalScoreText;
@@ -70,11 +70,11 @@ namespace A1
                                 break;
                             case ItemType.ShipPart:
                                 partItems.Add(item);
-                                cachedImage = item.itemImage;
+                                cachedItem = item.gameObject;
                                 totalScore += partsValue;
                                 player.personalScore += partsValue;
                                 partItem.Play();
-                                RpcDisplayPartsUI();
+                                RpcDisplayPartsUI(item);
                                 break;
                             default:
                                 Debug.Log("Item has no type assigned");
@@ -117,11 +117,11 @@ namespace A1
         /// Displays the next parts UI for all clients.
         /// </summary>
         [ClientRpc]
-        public void RpcDisplayPartsUI()
+        public void RpcDisplayPartsUI(Item _item)
         {
             partsUI[index].SetActive(true);
             Image partUiImage = partsUI[index].GetComponent<Image>();
-            partUiImage.sprite = cachedImage;
+            partUiImage.sprite =_item.itemImage;
             index += 1;
         }
 
