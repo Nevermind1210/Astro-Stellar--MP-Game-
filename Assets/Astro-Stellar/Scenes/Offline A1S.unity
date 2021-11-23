@@ -3455,6 +3455,7 @@ MonoBehaviour:
   syncInterval: 0.1
   timeRemaining: 120
   timer: {fileID: 1184513761}
+  timerRunning: 0
 --- !u!4 &1464715105
 Transform:
   m_ObjectHideFlags: 0
