@@ -141,7 +141,7 @@ namespace A1
             if(partItems.Count == partsCount && !allPartsFound)
             {
                 Debug.Log("All parts have been found");
-                RpcPopupText("All ship parts have been found.");
+                RpcPopupText("All ship parts have been found! \n Now collect as many organics as you can before lift-off!");
                 allPartsFound = true;
             }
         }

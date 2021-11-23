@@ -323,6 +323,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 733a0221db8a47747b75a639de919019, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 180ae5b070bcc8c45b9f3866a8b3083a, type: 2}
     - target: {fileID: 919132149155446097, guid: 733a0221db8a47747b75a639de919019, type: 3}
       propertyPath: m_Name
       value: Bolt_geo
