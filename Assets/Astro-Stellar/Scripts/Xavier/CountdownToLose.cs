@@ -12,7 +12,7 @@ using UnityEngine;
 public class CountdownToLose : NetworkBehaviour
 { 
    [Header("Timer Set")]
-   [SerializeField,SyncVar] private float timeRemaining = 10;
+   [SerializeField,SyncVar] private float timeRemaining = 180;
 
    private ItemManager _itemManager;
    [SyncVar] private float minutes;
@@ -36,9 +36,13 @@ public class CountdownToLose : NetworkBehaviour
          TimeOnEveryone();
       }
 
-      
+      if(MatchManager.instance.matchStarted)
+      {
+         timerRunning = true;
+      }
 
    }
+   
    
    void TimeOnEveryone()
    {
@@ -60,10 +64,10 @@ public class CountdownToLose : NetworkBehaviour
          timer.text = "0:00";
       }
 
-      if(timeRemaining == 15)
-      {
-         _itemManager.RpcPopupText("15 seconds remaining.");
-      }
+      // if(timeRemaining == 15)
+      // {
+      //    _itemManager.RpcPopupText("15 seconds remaining.");
+      // }
    }
    
    void ServerDisplayTime(float timeToDisplay)

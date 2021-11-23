@@ -176,7 +176,10 @@ namespace A1
         // Update is called once per frame
         void Update()
         {
-            RpcCoopScore();
+            if(isServer)
+            {
+                RpcCoopScore();
+            }
             organicsText.text = organicItems.Count.ToString();
             totalScoreText.text = $"Total Group Score: {totalScore.ToString()}";
 

@@ -59,11 +59,36 @@ public class PauseMenu : NetworkBehaviour
         isPaused = true;
     }
 
-    
     [ClientRpc]
+    public void RpcDisconnectHost() => CustomNetworkManager.instance.StopHost();
+    
+   
     public void DisconnectClientPlayer()
     {
-        RemovePlayer(clientPlayer);
+        if(isServer)
+        {
+            RpcDisconnectHost();
+        }
+        else
+        {
+            RpcDisconnectPlayer();
+        }
+
+        // if(isClient)
+        // {
+        //     CmdDisconnectPlayer();
+        //     
+        // }
+    }
+
+    [Command]
+    public void CmdDisconnectPlayer() => RpcDisconnectPlayer();
+    
+    [ClientRpc]
+    public void RpcDisconnectPlayer()
+    {
+        //RemovePlayer(clientPlayer);
+        CustomNetworkManager.instance.StopClient();
     }
 
     public void LeaveGame() => SceneManager.LoadScene("MainMenu");
