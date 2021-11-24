@@ -36,7 +36,7 @@ public class CountdownToLose : NetworkBehaviour
          TimeOnEveryone();
       }
 
-      if(MatchManager.instance.matchStarted)
+      if(MatchManager.instance.matchStarted && MatchManager.instance.isPlaying)
       {
          timerRunning = true;
       }

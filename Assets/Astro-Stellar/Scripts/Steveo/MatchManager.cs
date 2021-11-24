@@ -26,6 +26,7 @@ namespace NetworkGame.Networking
 
         // Any match settings you want here
         [SyncVar] public bool coopMode = true;
+        [SyncVar] public bool isPlaying = true;
 
         
         public void StartMatch()
@@ -55,6 +56,7 @@ namespace NetworkGame.Networking
         [Server]
         public void EndGame()
         {
+            isPlaying = false;
             if(coopMode)
             {
                 if(itemManager.allPartsFound)
