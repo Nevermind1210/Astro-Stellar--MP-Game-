@@ -52,21 +52,22 @@ namespace NetworkGame.Networking
                 SceneManager.UnloadSceneAsync("Lobby");
             }
         }
+
+        public void RunEndGame() => EndGame();
         
-        [Server]
+        
         public void EndGame()
         {
-            isPlaying = false;
             if(coopMode)
             {
                 if(itemManager.allPartsFound)
                 {
-                    itemManager.RpcPopupText($"Congratulations! \n You've fixed the ship and escaped the planet. \n Total Score: {itemManager.totalScore}");
+                    itemManager.CmdPopupText($"Congratulations! \n You've fixed the ship and escaped the planet. \n Total Score: {itemManager.totalScore}");
                 }
 
                 if(!itemManager.allPartsFound)
                 {
-                    itemManager.RpcPopupText($"Unfortunately the ship was not repaired in time! \n You are now stuck on this planet....forever! \n Total Score: {itemManager.totalScore}");
+                    itemManager.CmdPopupText($"Unfortunately the ship was not repaired in time! \n You are now stuck on this planet....forever! \n Total Score: {itemManager.totalScore}");
                 }
             }
 
@@ -77,19 +78,19 @@ namespace NetworkGame.Networking
 
                 if(itemManager.allPartsFound)
                 {
-                    itemManager.RpcPopupText($"Congratulations! \n The ship was repaired! \n Player with the highest score: {playerScores.highestScorePLayer.name} {playerScores.highestScorePLayer.personalScore}");
+                    itemManager.CmdPopupText($"Congratulations! \n The ship was repaired! \n Player with the highest score: {playerScores.highestScorePLayer.name} {playerScores.highestScorePLayer.personalScore}");
 
                 }
                 
                 
                 if(!itemManager.allPartsFound)
                 {
-                    itemManager.RpcPopupText($"Unfortunately the ship was not repaired in time! \n You are now stuck on this planet....forever! \n Player with the highest score: {playerScores.highestScorePLayer.name} {playerScores.highestScorePLayer.personalScore}");
+                    itemManager.CmdPopupText($"Unfortunately the ship was not repaired in time! \n You are now stuck on this planet....forever! \n Player with the highest score: {playerScores.highestScorePLayer.name} {playerScores.highestScorePLayer.personalScore}");
 
                 }
             }
             
-            Invoke(nameof(RpcBackToMain), 5);
+            CallLoadMainMenu(5);
             
             
             //if playing coop
@@ -109,9 +110,31 @@ namespace NetworkGame.Networking
             // after all this wait for 5-10 s and load main menu??
                 
         }
+        
+        /// <summary>
+        /// Stops the Host and Server and Loads the Main Menu.
+        /// </summary>
+        /// <param name="_seconds">The amount of time in seconds until the main menu scene loads.</param>
+        public void CallLoadMainMenu(int _seconds)
+        {
+            if(isServer)
+            {
+                Invoke(nameof(RpcBackToMain), _seconds);
+            }
 
+            if(isClient)
+            {
+                Invoke(nameof(CmdBackToMain), _seconds);
+
+            }
+        }
+
+        [Command]
+        public void CmdBackToMain() => RpcBackToMain();
+        
+        
         [ClientRpc]
-        private void RpcBackToMain()
+        public void RpcBackToMain()
         {
             CustomNetworkManager.instance.StopHost();
             SceneManager.LoadScene("MainMenu");

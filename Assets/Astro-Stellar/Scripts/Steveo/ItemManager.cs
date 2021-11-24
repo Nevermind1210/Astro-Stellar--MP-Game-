@@ -146,6 +146,9 @@ namespace A1
             }
         }
 
+        [Command(requiresAuthority = false)]
+        public void CmdPopupText(string _string) => RpcPopupText(_string);
+
         /// <summary>
         /// Popup text to display item status to all clients.
         /// </summary>

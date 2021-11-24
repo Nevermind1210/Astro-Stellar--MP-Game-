@@ -12,7 +12,7 @@ using UnityEngine;
 public class CountdownToLose : NetworkBehaviour
 { 
    [Header("Timer Set")]
-   [SerializeField,SyncVar] private float timeRemaining = 180;
+   [SerializeField,SyncVar] private float timeRemaining = 30;
 
    private ItemManager _itemManager;
    [SyncVar] private float minutes;
@@ -56,7 +56,8 @@ public class CountdownToLose : NetworkBehaviour
          Debug.LogError("Time has ran out!");
          if (timerRunning)
          {
-            MatchManager.instance.EndGame();
+            MatchManager.instance.isPlaying = false;
+            MatchManager.instance.RunEndGame();
             //_itemManager.RpcPopupText("Time has ran out!");
             timeRemaining = 0;
             timerRunning = false;
